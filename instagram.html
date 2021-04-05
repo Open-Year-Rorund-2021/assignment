@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <link rel="stylesheet" href="insta.css">
+  <title>Instagram</title>
+  <script type="text/javascript">
+  let imgArray=new Array();
+
+  imgArray[0]="img/1.jpg";
+  imgArray[1]="img/2.jpg";
+  imgArray[2]="img/3.jpg";
+  imgArray[3]="img/4.jpg";
+
+  function showImage(){
+    let imgNum=Math.round(Math.random()*3);
+    let objImg=document.getElementById("imgchange");
+    objImg.src=imgArray[imgNum];
+    setTimeout(showImage,1500);
+  }
+  </script>
+</head>
+<body onload="showImage()">
+  <div class="main">
+
+  <article class="content">
+
+    <div class="image">
+      <img class="imgb" src="img/blackP.png">
+      <img class="imgw" src="img/whiteP.png">
+      <img id="imgchange" border="0">
+    </div>
+
+    <div class="txt">
+
+      <div class = "signin">
+        <img src="img/logo.png" class="logo">
+        <form>
+          <input class="textbox" type="text" name="id" value="  전화번호, 사용자 이름 또는 이메일">
+          <br>
+          <input class="textbox" type="text" name="password" value="  비밀번호">
+          <br>
+          <input class="submitbox" type="submit" name="login" value="로그인">
+        </form>
+        <div class="line">또는</div>
+        <a href="#" class="fb"><img src="img/facebook.jpg" width="17px">&nbspFacebook으로 로그인</a>
+        <br>
+        <a href="#" class="pw">비밀번호를 잊으셨나요?</a>
+      </div>
+
+      <div class="signup">
+        <a>계정이 없으신가요?</a>
+        <a href="#" class="upb">가입하기</a>
+      </div>
+
+      <p style="font-size: 14px;">앱을 다운로드하세요.</p>
+
+      <div class="download">
+        <button type="button" name="appstore">
+          <img class="downimg1" src="img/a.jpg">
+          App Store<span style="font-size:12px;">에서<br>다운로드 하기</span></button>
+        <button type="button" name="button">
+          <img class="downimg2" src="img/g.jpg">
+          <span style="font-size:8px;">다운로드하기</span><br><span style="font-size:14px;">Google Play</span></button>
+      </div>
+    </div>
+  </article>
+</div>
+
+  <footer>
+    <a href="#">소개</a>
+    <a href="#">블로그</a>
+    <a href="#">채용 정보</a>
+    <a href="#">도움말</a>
+    <a href="#">API</a>
+    <a href="#">개인정보처리방침</a>
+    <a href="#">약관</a>
+    <a href="#">인기 계정</a>
+    <a href="#">해시태그</a>
+    <a href="#">위치</a>
+    <br>
+    <a href="#">뷰티</a>
+    <a href="#">댄스 및 공연</a>
+    <a href="#">피트니스</a>
+    <a href="#">식음료</a>
+    <a href="#">집 및 정원</a>
+    <a href="#">음악</a>
+    <a href="#">시각 예술</a>
+
+    <div class="veryb">
+      <select class="lang">
+        <option>한국어</option>
+        <option>English</option>
+        <option>English(UK)</option>
+        <option>Afrikaans</option>
+        <option>Dansk</option>
+        <option>Deutch</option>
+      </select>
+      <span>© 2021 Instagram from Facebook</span>
+    </div>
+
+  </footer>
+</body>
+
+</html>
