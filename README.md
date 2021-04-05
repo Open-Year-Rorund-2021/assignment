@@ -9,7 +9,9 @@
 등을 참고하시면 됩니다! 
 
 ## Features
+![image](https://user-images.githubusercontent.com/41178045/113546031-3b22eb80-9626-11eb-862d-1d5110665480.png)
 
 - 인스타그램 로그인하기 전 페이지 클론 코딩
 - 미디어쿼리 : 창을 줄이면 폰 부분이 사라지게
 -  +) 가능하면 휴대폰 화면 부분 애니메이션
+![Uploading image.png…]()
