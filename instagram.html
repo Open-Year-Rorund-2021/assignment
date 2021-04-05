@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media(max-width:1200px){
-        .abde{
+        @media(max-width:800px){
+        .image{
             display:none;
         }
         .box1{
@@ -18,7 +18,7 @@
             border: 1px solid rgb(235, 235, 235);
             width: 300px;
             height: 300px;
-            margin-left: 30%;
+            display: inline-block;
             text-align: center;
         }
 
@@ -26,7 +26,7 @@
             border: 1px solid rgb(235, 235, 235);
             width: 300px;
             height: 30px;
-            margin-left: 30%;
+            
             
             text-align: center;
             
@@ -34,13 +34,11 @@
         .box3{
             width: 300px;
             height: 50px;
-            margin-left: 30%;
             text-align: center;
 
         }
         .box4{
             width:600px;
-            margin-left: 10%;
             align-content: center;
             text-align: center;
         }
@@ -52,23 +50,31 @@
         .blue{
             color: cornflowerblue;
         }
-        .abde{
+        .image{
             color: thistle;
         }
+        .back{
+            display: inline-block;
+            width: 800px;
+            margin-left: 200px;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="abde">
-    <img src="image/aaa.JPG"  alt="인스타그램 사진" style="float: left; width: 400px;">
+
+
+    <div class="back">
+
+    
+    <div class="image">
+        <img src="image/aaa.JPG"  alt="인스타그램 사진" style=" width: 400px;">
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    
 
     <div class="box1">
-    <img src="image/logo.JPG" alr="로고" style="width: 250px;"><br>
+    <img src="image/logo.JPG" alt="로고" style="width: 250px;"><br>
     <form>
         <input type="text" placeholder="전화번호,사용자 이름 또는 이메일 "  style="font-size:80%; border-color: white;border-radius: 5px;"><br>
         <input type="text" placeholder="비밀번호"  style="font-size:80%; border-color: white;border-radius: 5px;"><br>
@@ -94,6 +100,8 @@
 
     <br><br>
     <br><br>
+
+    </div>
 
     <div class="box4">
         <div class="font">
