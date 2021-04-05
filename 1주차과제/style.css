@@ -1,0 +1,51 @@
+article{
+    margin : 0 auto;
+    width: 840px;
+}
+
+.phone{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.login{
+    border: 1px solid #dbdbdb;
+    margin-top: 55px;
+}
+
+.title{
+    width: 175px;
+    height: 51px;
+    margin: 22px auto 12px;
+}
+
+.username {
+    width: 268px;
+    height: 33px;
+   margin: 0 40px 6px;
+   border: 1px solid #dbdbdb;
+   border-radius: 3px;
+   background-color: #fafafa;
+   font-size: 12px;
+}
+
+.password{
+    width: 268px;
+    height: 33px;
+   margin: 0 40px 6px;
+   border: 1px solid #dbdbdb;
+   border-radius: 3px;
+   background-color: #fafafa;
+   font-size: 12px;
+}
+
+.loginbtn{
+    background-color: #b2dffc;
+    border-radius: 4px;
+    border: none;
+    width: 272px;
+    height: 33px;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
