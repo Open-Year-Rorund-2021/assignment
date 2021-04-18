@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="insta_css.css">
+
+    <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    <div id="BOX">
+        <div id="H">
+            <img src="인스타 로고.png" alt="" id="logo">
+            <input type="text" name="search" id="search" placeholder="검색"></input>
+            <img src="H_right.PNG" alt="" id="right">
+        </div>
+
+        <div class="modal hidden">
+            <div class="bg"></div>
+                <div class="modalBox">
+                   <p style="color:red; font-weight: bold;">신고</p>
+                   <p class="list" style="color:red; font-weight: bold;">팔로우 취소</p>
+                   <p class="list">게시물로 이동</p>
+                   <p class="list">공유 대상...</p>
+                   <p class="list">링크 복사</p>
+                   <p class="list">퍼가기</p>
+                   <p class="list" id="close">취소</p>
+                </div>
+            </div>
+
+        <div id="B">
+            <br>
+            <div id="content">
+                <img src="프로필.jpg" alt="" id="pro">
+                <p id="p_id">insta_id
+                    <img src="모달.PNG" alt="" id="modal" class="openBtn">
+                </p>
+                <img src="피드.jpg" alt="" id="picture" ondblclick="changepic();">
+                <img src="하트(누름x).jpg" alt="" id="heart" onclick="changepic();" class="heart" width="25px">
+                <img src="next.jpg" alt="" class="heart" width="444px">
+                <div id="under">
+                    <strong>banana_cat</strong>님 <strong>여러 명</strong>이 좋아합니다
+                    <br>
+                    <strong>insta_id</strong>
+                    엄지 척하는 고양이
+                    <p id="time">30분전</p>
+                </div>
+                <div id="comment">
+                    <img src="smile.PNG" alt="" class="comment">
+                    <div id="write"class="comment">댓글 달기...</div>
+                    <div id="post">게시</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="insta_js.js"></script>
+</html>
