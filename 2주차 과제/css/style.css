@@ -3,13 +3,15 @@ body{
 }
 
 header{
-    height:50px;
+    height:54px;
     padding: 1rem;
     color: black;
     background: #FFFFFF;
     font-weight: bold;
     display:flex;
     position : fixed;
+    justify-content: space-around;
+    align-items: center;
     top : 0;
     left : 0;
     right : 0;
@@ -17,4 +19,19 @@ header{
 
 .main{
     margin-top : 100px;
+    display : flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+.body{
+    margin-top : 20px;
+}
+
+.top{
+    height: 50px;
+}
+
+.contents{
+    height:500px;
 }
