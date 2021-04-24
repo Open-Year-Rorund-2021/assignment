@@ -97,6 +97,7 @@ button{
     margin-bottom: 30px;
 }
 
+
 @media screen and (max-width : 768px){
     .img{
         display: none;

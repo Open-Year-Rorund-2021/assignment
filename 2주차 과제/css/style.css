@@ -2,6 +2,11 @@ body{
     background : #FAFAFA;
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
 header{
     height:54px;
     padding: 1rem;
