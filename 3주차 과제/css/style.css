@@ -1,0 +1,32 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.container{
+    width : 348px;
+    height : 500px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+
+.intro{
+    width : 268px;
+    height : 40px;
+    font-size: 17px;
+    color: #8E8E8E
+}
+.outer{
+    width : 268px;
+    height : 36px;
+}
+
+input{
+    width : 258px;
+    height : 19px;
+    background-color: #FAFAFA;
+    border : 1px solid #efefef;
+    border-radius : 3px;
+    margin-top : 4px;
+    padding : 9px 0px 7px 8px;
+}
