@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="insta.ico">
+
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        p, span {
+            font-size: 14px;
+        }
+
+        .pic {
+            border-radius: 100%;
+        }
+        .userID {
+            margin-right: 5px;
+            margin-left: 7px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        nav {
+            width: 100%;
+            height: 54px;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-container {
+            max-width: 1000;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .nav-1 {
+            width: 370px;
+            display: flex;
+            align-items: center;
+        }      
+        .nav-2 {
+            width: 370px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .nav-img {
+            height: 22px;
+            margin-left: 20px;
+        }
+        .logo_instagram_txt {
+            height: 30px;
+        }
+        .input-search {
+            width: 200px;
+            height: 12px;
+            padding: 7px;
+            box-sizing: content-box;
+            border: 1px solid #DBDBDB;
+            border-radius: 3px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HPh-Ws47f4UGXEU8pqvy3SDsmoyWciBllQ&usqp=CAU);
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: 38% center;
+            text-indent: 19%;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: center;
+            font-weight: 300;
+            color: #8e8e8e;
+        }
+
+        main {
+            width: 960px;
+            margin: 0 auto;
+            padding-top: 94px;
+            padding-bottom: 40px;
+        }
+
+        .feeds {
+            width: 614px;
+            margin-right: 34px;
+        }
+        article {
+            background-color: #fff;
+            border-radius: 3px;
+            border: 1px solid #DBDBDB;
+            margin-bottom: 60px;
+        }
+
+        header {
+            height: 60px;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-of-article {
+            display: flex;
+            align-items: center;
+        }
+        .img-profile {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #fafafa;
+            border-radius: 100%;
+        }
+        .main-image img {
+            width: 612px;
+        }
+        .icons-react {
+            height: 40px;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .icon-react {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+        .icons-left {
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .reaction {
+            padding: 0 16px;
+        }
+        .description {
+            align-items: center;
+            height: 18px;
+        }        
+        .commentsli {
+            height: 21px;
+            color: #262626;
+            font-size: 14px;
+        }
+        .comment-heart {
+            width: 12px;
+            height: 12px;
+            margin-left: 530px;
+        }
+        .myuserID {
+            margin-right: 5px;
+            margin-left: -35px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .time-log {
+            margin-bottom: 8px;
+            height: 18px;
+            font-size: 12px;
+            color: #8e8e8e;
+        }
+
+        .hl {
+            border-top: 1px solid #DBDBDB;
+            width: 612px;
+        }
+
+        .input-comment {
+            font-size: 14px;
+            width: 560px;
+            height: 18px;
+            padding: 28px 16px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #8e8e8e;
+        }
+        .submit-comment {
+            color: #0095f6;
+            background-color: #fff;
+            border-style: none;
+            height: 40px;
+            width: 40px;
+            padding: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .modalbutton {
+            background-color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+         .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            padding-top: 80px;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 200px auto;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            width: 20%; 
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;   
+            text-align: center;
+            line-height: 200%;
+        }
+
+        .close {
+            color: black;
+            font-size: 16px;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+</style>
+<script>
+    var cnt=1;
+    function imgheart() {
+        var img1=document.getElementById("img1");
+        var img=document.getElementById("imag2");
+
+        if(cnt%2==1) {
+            img1.src="https://www.pngfind.com/pngs/m/6-62455_instagram-heart-emoji-free-download-transparent-heart-symbol.png";
+            img2.src="https://static.thenounproject.com/png/629577-200.png";
+        }
+        else {
+            img1.src="https://static.thenounproject.com/png/629577-200.png";
+            img2.src="https://www.pngfind.com/pngs/m/6-62455_instagram-heart-emoji-free-download-transparent-heart-symbol.png";
+        }
+        cnt++;
+    }
+</script>
+</head>
+<body>
+    <nav style="border-bottom: 1px solid #cfcece; background-color: white;">
+        <div class="nav-container">
+            <div class="nav-1">
+                <a href="https://www.instagram.com/"><img class="logo_instagram_txt" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></a>
+            </div>
+            <input id="searchInput" type="search" class="input-search" placeholder="검색">
+            <div class="nav-2">
+                <a href="https://www.instagram.com/"><img class="nav-img"  src="https://tl.vhv.rs/dpng/s/522-5227138_home-instagram-home-icon-svg-hd-png-download.png" ></a>
+                <a href="https://www.instagram.com/direct/inbox/"><img class="nav-img" src="https://static.thenounproject.com/png/2552724-200.png"></a>
+                <a href="https://www.instagram.com/explore/"><img class="nav-img" src="https://img.icons8.com/ios/452/compass--v1.png"></a>
+                <a href="https://www.instagram.com/accounts/activity/"><img class="nav-img" src="https://static.thenounproject.com/png/629577-200.png"></a>
+                <a href="https://www.instagram.com/hhanni/"><img class="pic nav-img" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/145547774_1081128432399436_3204618472784778612_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=j3SLozmdyW4AX88E0W1&edm=AIQHJ4wAAAAA&ccb=7-4&oh=402e2411a3f85bd7a59bffa5b9c61264&oe=60A898C6&_nc_sid=7b02f1"></a>    
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="feeds">
+            <article>
+                <header>
+                    <div class="profile-of-article">
+                        <a href="https://www.instagram.com/kimsmell1/"><img class="img-profile" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/175556341_2843653065900841_8255934812122193246_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=73LL8dk_HOAAX9Sm-oJ&edm=ABfd0MgAAAAA&ccb=7-4&oh=33ab3493ba90c1192f30802bfb49065e&oe=60A6A08D&_nc_sid=7bff83"></a>   
+                        <span class="userID">kimsmell1</span>
+                    </div>
+                    <button type="button" class="modalbutton" id="myBtn"><img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"></button>
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div style="color: red;">신고</div><hr>                                                            
+                            <div style="color: red;">팔로우 취소</div><hr> 
+                            <div>게시물로 이동</div><hr> 
+                            <div>공유 대상...</div><hr> 
+                            <div>링크 복사</div><hr> 
+                            <div>퍼가기</div><hr> 
+                            <div class="close">취소</div> 
+                      </div>
+                 
+                    </div>
+                    <script>
+                        var modal = document.getElementById('myModal');
+                        var btn = document.getElementById("myBtn");
+                        var span = document.getElementsByClassName("close")[0];                                          
+
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+
+                    </script>
+                </header>
+                <div class="main-image">
+                    <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/176528591_918785702190564_9026078888666024326_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=cPc6Krbo8kUAX8P4-rI&edm=APU89FAAAAAA&ccb=7-4&oh=f2b2f9c885e0591ac12ece2c59393757&oe=60A9545C&_nc_sid=86f79a" class="mainPic">
+                </div>
+                <div class="icons-react">
+                    <div class="icons-left">
+                        <img class="icon-react" src="https://static.thenounproject.com/png/629577-200.png">
+                        <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                        <img class="icon-react" src="https://static.thenounproject.com/png/2552724-200.png">
+                    </div>
+                    <img class="icon-react" src="https://www.freepngimg.com/download/instagram/60239-like-icons-bookmark-button-computer-facebook-instagram.png">
+                </div>
+
+                <div class="reaction">
+                    <div class="description">
+                        <p><span class="userID">kimsmell1</span> 🥕</p>
+                    </div>
+                    <div>
+                        <ul style="list-style-type: none;">
+                            <li class="commentsli" style="list-style-type: none;">
+                                <p><span class="myuserID">hhanni__</span> 🌱🌱</p>
+                                <img class="comment-heart" src="https://static.thenounproject.com/png/629577-200.png">
+                            </li>
+                        </ul>
+                        <div class="time-log">
+                            <span class="time-log">52분 전</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hl"></div>
+                <div>
+                    <input id="input-comment" class="input-comment" type="text" placeholder="댓글 달기...">
+                    <button type="submit" class="submit-comment">게시</button>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
