@@ -51,11 +51,26 @@ header{
 
 .footer{
     height : 40px;
-    border : 1px solid #efefef;
+    border-top : 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
     border-radius: 4px;
     background-color: #FFFFFF;
     display : flex;
     align-items: center;
+}
+
+.input_box{
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+#like, #like0, #like1{
+    display : none;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
 }
 
 .comments{
@@ -66,6 +81,7 @@ header{
     display: flex;
     align-items: center;
 }
+
 #my_modal{
     display: none;
     width : 300px;
@@ -80,8 +96,33 @@ header{
     border : 0px;
 }
 
-#my_modal .modal_close_btn{
-    position:absolute;
-    top: 10px;
-    right : 10px;
-}
+.modal-container {
+    background: rgba(0,0,0,.5);
+    display: none;
+    /* this is how we cover the entire page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+  
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
