@@ -31,7 +31,7 @@
 - 미디어쿼리 : 창 줄이면 추천친구 사라짐
 -  +) 좋아요 버튼 누르면 색칠되게
 
-# 2주차
+# 3주차
 ## JavaScript (조건문, 반복문, 객체, 배열)
 
 ## Features
@@ -46,6 +46,8 @@
 ![image](https://user-images.githubusercontent.com/41178045/116060284-b2dfb580-a6bc-11eb-9855-421dae1d5fae.png)
 - 피드페이지 반복문으로 여러 개 만들기
 - 각각 내용 다르게
+![image](https://user-images.githubusercontent.com/41178045/116063136-95601b00-a6bf-11eb-9a60-fb6a6105f079.png)
+![image](https://user-images.githubusercontent.com/41178045/116063337-d35d3f00-a6bf-11eb-9716-924613d783b6.png)
 
-- 피드페이지에서 했던 내용과 동일하게 사진 반복문으로 여러장 띄우기
-- 
+- 빨간 박스 누르면 나오는 사용자 페이지 완성
+- 피드 페이지에서 했던 내용과 동일하게 사진 반복문으로 여러장 띄우기
