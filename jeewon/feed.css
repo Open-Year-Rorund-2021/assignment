@@ -1,0 +1,240 @@
+body{
+  background-color: #fafafa;
+}
+
+a{
+  text-decoration: none;
+  color: #262626;
+}
+
+.warn{
+  font-weight: bold;
+  color: #ed4956;
+}
+
+li{
+  text-align: center;
+  list-style: none;
+}
+
+li>a{
+  line-height: 3;
+  font-size: 15px;
+}
+
+header{
+  position: fixed;
+  top: -1px;
+  width: 100%
+}
+
+nav{
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.logo{
+
+}
+
+.search > input{
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    background-image:url("img/돋보기.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 60px center;
+    color: #8e8e8e;
+    text-align: center;
+    height: 20px;
+    width: 180px;
+}
+
+.icons{
+  justify-content: center;
+}
+
+.icons > a > img{
+  width: 25px;
+}
+
+.icons > a{
+  padding: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 32px auto 0;
+    padding-top: 15px;
+    padding-bottom: 32px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.story{
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  max-width: 600px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.post{
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+  height: 850px;
+}
+
+.top{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.id{
+  top: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #262626;
+  position: relative;
+}
+
+.profile{
+  float: left;
+  width: 30px;
+  margin: 15px 20px;
+}
+
+.back{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#openBtn{
+  cursor: pointer;
+  border: 0px solid white;
+  background-color: white;
+  float: right;
+  height: 60px;
+  width: 60px;
+}
+
+#modalInner{
+  border-radius: 15px;
+  background-color: white;
+  margin: 12% auto;
+  padding: 20px;
+  width: 360px;
+}
+
+.respond{
+  flex-direction: row;
+}
+
+.respond > img{
+  margin: 5px;
+}
+
+.like{
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.bm{
+  cursor: pointer;
+  float: right;
+  padding-right: 15px;
+}
+
+.nlike{
+    font-weight: bold;
+    font-size: 14px;
+    color: #262626;
+    padding-left: 15px;
+}
+
+.content{
+  padding-left: 15px;
+  padding-top: 10px;
+  color: #262626;
+}
+
+.date{
+  padding-top: 7px;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: gray;
+}
+
+.cmt{
+  padding-top: 20px;
+  padding-left:15px;
+  border-top: 1px solid #dbdbdb;
+  align-items: center;
+  flex-direction: row;
+}
+
+.cmt > svg {
+  margin-top: 15px;
+}
+
+.text{
+  display: inline;
+  height: 30px;
+  border: none;
+  width: 400px;
+  margin-left: 15px;
+}
+
+.submit{
+  height: 30px;
+  border: none;
+  background-color: white;
+  color: #0095f6;
+  opacity: 0.4;
+  font-weight: bold;
+  padding-right: 15px;
+  float: right;
+}
+
+@media screen and (max-width: 650px){
+  .post{
+    border: none;
+    background-color: #fafafa;
+  }
+
+  #openBtn{
+    border: none;
+    background-color: #fafafa;
+  }
+
+  .search{
+    display: none;
+  }
+}
