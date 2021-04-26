@@ -73,6 +73,15 @@ header{
     background-color: #FFFFFF;
 }
 
+#cont{
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
 .comments{
     height : 56px;
     border : 1px solid #efefef;
