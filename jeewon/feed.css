@@ -237,4 +237,8 @@ nav{
   .search{
     display: none;
   }
+
+ .text{
+    background-color: #fafafa;
+  }
 }
