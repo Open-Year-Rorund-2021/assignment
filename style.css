@@ -1,0 +1,226 @@
+/* icon */
+
+.far {
+  font-size: 25px;
+}
+/* .fa-compass {
+    font-size: 25px;
+  }
+  
+  .fa-heart {
+    font-size: 25px;
+  } */
+
+.fa-ellipsis-h {
+  font-size: 20px;
+}
+
+/* icon end */
+
+/* header */
+
+header {
+  width: 100%;
+  height: 40px;
+  padding: 5px 0;
+  border: solid 1px black;
+}
+
+.header-container {
+  width: 60%;
+  height: 100%;
+  margin: 0 20%;
+  vertical-align: center;
+  padding: 5px 0 5px;
+  display: flex;
+}
+
+.header-left {
+  flex: 1;
+}
+/* header-left */
+.insta-icon {
+  font-size: 25px;
+  float: left;
+  margin-right: 15px;
+  padding-top: 3px;
+}
+
+.vertical-line {
+  border-left: 1px solid gray;
+  height: 25px;
+  float: left;
+  margin-right: 15px;
+  padding-top: 3px;
+}
+
+.instagram-logo {
+  width: 100px;
+  height: 100%;
+}
+
+/* header-left end */
+
+.header-center {
+  width: 200px;
+  height: 80%;
+  background-color: gray;
+  border: solid 1px black;
+  flex: 1;
+  margin-right: 100px;
+}
+
+/* header-right */
+
+.header-right {
+  width: 170px;
+  height: 80%;
+  padding: 2px 0;
+}
+
+.tools {
+  display: flex;
+  text-align: center;
+}
+
+.tool-compass {
+  flex: 1;
+}
+
+.my-heart {
+  flex: 1;
+}
+
+.my-profile {
+  flex: 1;
+}
+
+/* header-right end */
+
+/* header end */
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.feed {
+  /* width: 60%; */
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  border: solid 1px black;
+}
+
+/* title */
+.post-title {
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  height: 45px;
+  /* border: solid 1px black; */
+  background-color: white;
+  display: flex;
+}
+
+.profile-img {
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex: 1;
+}
+.post-title-center {
+  flex: 10;
+}
+.user-id {
+  padding: 15px 5px;
+}
+
+.post-title-right {
+  flex: 1;
+  padding: 13px 0;
+  text-align: center;
+}
+
+/* title end */
+
+.main-img {
+  width: 100%;
+}
+
+/* interact part  */
+.post-interact {
+  height: 40px;
+  width: 100%;
+  border: solid 1px black;
+  display: flex;
+  background-color: white;
+
+  /* padding: 5px; */
+}
+
+.like {
+  padding: 10px;
+  flex: 1;
+}
+
+.comment-button {
+  flex: 14;
+}
+
+.comment-img {
+  width: 40px;
+}
+.post-bookmark {
+  text-align: center;
+  padding: 8px 0 2px;
+  flex: 1;
+}
+
+/* interact part end */
+
+.post-content {
+  padding: 10px;
+  background-color: white;
+}
+
+.post-id {
+  float: left;
+}
+
+.post-commenet-list {
+  background-color: white;
+}
+
+.post-comment {
+  width: 100%;
+  margin-left: 15px;
+  display: flex;
+  /* padding-left: 15px; */
+  /* float: left; */
+  background-color: white;
+}
+
+/* comment */
+.comment-id {
+  width: 100%;
+  height: 10px;
+  /* margin-left: 10px 0; */
+  float: left;
+  flex: 1;
+}
+
+.comment {
+  flex: 10;
+}
+
+.comment-heart {
+  flex: 1;
+}
+.comment-heart > .fa-heart {
+  font-size: 15px;
+  flex: 1;
+}
+/* comment end */
