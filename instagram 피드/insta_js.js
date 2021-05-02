@@ -1,4 +1,4 @@
-let heart=document.querySelector("#heart");
+let heart=document.querySelector(".heart");
 
 heart.onclick=changepic;
 

@@ -5,6 +5,10 @@
 #H{
     border-bottom: 1px solid  #dbdbdb;
     height: 60px;
+    background:white;
+    width: 100%;
+    position: fixed;
+    top:-1px;
 }
 
 #search {
@@ -20,31 +24,32 @@
     background-position: 70px center;
     padding-left: 8px;
     background-size: 20px;
+    margin-top:24px;
 }
 
 #logo{
-    padding-right: 130px;
+    margin-top:20px;
     position: relative;
+    float:left;
+    padding-left:15%;
 }
 #right{
     height: 40px;
     width:auto;
-    padding-left: 40px;
     position: relative;
+    margin-top:10px;
+    float:right;
+    padding-right: 15%;
 }
 
-@media (max-width: 730px){
+@media (max-width: 800px){
     #logo{
         float: left;
-        padding-top: 10px;
         padding-right: 0px;
     }
     #right{
         padding:0;
         float:right;
-    }
-    #search{
-        margin-top:24px;
     }
 }
 
@@ -60,6 +65,7 @@
     margin-left:20px;
 }
 #B{
+    top: 100px;
     text-align: left;
     width:100%;
     min-height: 800px;
@@ -71,6 +77,7 @@
     width: 500px;
     border-radius: 3px;
     margin:auto;
+    margin-top:40px;
 }
 #p_id{
     margin-top: 18px;
@@ -159,4 +166,5 @@
   .list{
     padding-top: 10px;
     border-top: 1px solid  #dbdbdb;
+    cursor:default;
   }
