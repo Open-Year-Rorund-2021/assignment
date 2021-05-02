@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
+    <title>@jeewon • Instagram 사진 및 동영상</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="feed.html"><img src="img/logo.png" width="110px"></a></div>
+        <div class="search">
+          <input type="text" placeholder="검색">
+        </div>
+        <div class="icons">
+          <a href="feed.html"><img src="img/home.png"></a>
+          <a href="#"><img src="img/dm.png"></a>
+          <a href="#"><img src="img/compass.png"></a>
+          <a href="#"><img src="img/l.png"></a>
+          <a href="mypage.html"><img src="img/user.png"></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="profile">
+        <img src="img/user.png">
+        <section class="userid">
+          <h1>jeewon</h1>
+          <span>
+            <button type="button" name="button" class="edit">프로필 편집</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+          </span>
+          <ul>
+            <li>게시물<b>&nbsp2</b></li>
+            <li>팔로워<b>&nbsp0</b></li>
+            <li>팔로우<b>&nbsp0</b></li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="feed">
+
+      </div>
+
+    </div>
+
+    <footer>
+      <a href="#">소개</a>
+      <a href="#">블로그</a>
+      <a href="#">채용 정보</a>
+      <a href="#">도움말</a>
+      <a href="#">API</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">약관</a>
+      <a href="#">인기 계정</a>
+      <a href="#">해시태그</a>
+      <a href="#">위치</a>
+
+      <div class="veryb">
+        <select class="lang">
+          <option>한국어</option>
+          <option>English</option>
+          <option>English(UK)</option>
+          <option>Afrikaans</option>
+          <option>Dansk</option>
+          <option>Deutch</option>
+        </select>
+        <span>© 2021 Instagram from Facebook</span>
+      </div>
+    </footer>
+
+    <script>
+    let a='';
+    let feedArr = ['fi1.png', 'fi2.png'];
+
+    for (let i = 0; i < feedArr.length; i++) {
+      a+=`
+      <img src="img/`+feedArr[i]+`">
+      `;
+    }
+
+    document.getElementById('feed').innerHTML = a;
+    </script>
+  </body>
+</html>
