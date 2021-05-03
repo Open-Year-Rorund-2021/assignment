@@ -82,19 +82,9 @@
         document.getElementById("X").style.display = "block";
       } 
       else {
-        if (id.value != 'instagram@naver.com') {
-           document.getElementById("X").style.display = "none";
-           alert('가입되지 않은 아이디입니다')
-         } else {
-           if (pw.value != '1234') {
-             document.getElementById("X").style.display = "none";
-            alert('비밀번호를 확인해주세요')
-           } else {
-             document.getElementById("X").style.display = "none";
+        document.getElementById("X").style.display = "none";
              alert('로그인 되었습니다.\n \n휴대폰 및 이메일:' + id.value + "\n성명: "+ name2.value + "\n사용자 이름: "+ nickname.value);
              location.href = "week3_feed.html";
-          }
-         }
       }
     } 
 
