@@ -66,14 +66,14 @@ header{
     background-color: #FFFFFF;
 }
 
-#like, #like0, #like1{
+#like, #like0, #like1, #like2{
     display : none;
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef;
     background-color: #FFFFFF;
 }
 
-#cont{
+#cont, #cont0, #cont1, #cont2{
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef;
     background-color: #FFFFFF;
@@ -90,6 +90,12 @@ header{
     display: flex;
     align-items: center;
 }
+
+#appendcomments, #appendcomments0, #appendcomments1{
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+} 
 
 #my_modal{
     display: none;
