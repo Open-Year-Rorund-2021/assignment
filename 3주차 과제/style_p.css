@@ -1,0 +1,88 @@
+#BOX{
+    text-align: center;
+}
+
+#H{
+    border-bottom: 1px solid  #dbdbdb;
+    height: 60px;
+    background:white;
+    width: 100%;
+    position: fixed;
+    top:-1px;
+}
+
+#search {
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+    width: 200px;
+    background:rgb(250, 250, 250);
+    font-size: 13px;
+    background-image: url(돋보기.PNG);
+    background-repeat: no-repeat;
+    background-position: 70px center;
+    padding-left: 8px;
+    background-size: 20px;
+    margin-top:24px;
+}
+
+#logo{
+    margin-top:20px;
+    position: relative;
+    float:left;
+    padding-left:15%;
+}
+
+#right_1{
+    height: 40px;
+    width:auto;
+    position: relative;
+    margin-top:10px;
+    float:right;
+    padding-right: 15%;
+}
+
+#right_2{
+    height: 40px;
+    width:auto;
+    position: relative;
+    margin-top:10px;
+    float:right;
+}
+
+#profile_pic{
+    float: left;
+    margin: 80px;
+    margin-left:15%;
+    width:170px;
+    border-radius: 100%;
+    border: 1px solid  #dbdbdb;
+}
+@media (max-width: 800px){
+    #logo{
+        float: left;
+        padding-right: 0px;
+    }
+    #right_1{
+        padding:0;
+        float:right;
+    }
+    #profile_pic{
+        margin: 80px;
+        margin-left:0;
+        margin-left: 20px;
+     }
+}
+.B{
+    top: 100px;
+    text-align: center;
+    width:100%;
+    min-height: 800px;
+    background-color:rgb(250, 250, 250);
+}
+
+.pic{
+    text-align: center;
+    width:300px;
+}
