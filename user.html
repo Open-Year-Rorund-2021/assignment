@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="insta.ico">
+    <link rel="icon" href="insta.ico">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            height: 100%;
+            display: block;
+        }
+        div {
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+
+        #entire {
+            z-index: 0;
+            height: 100%;
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+
+        .scc {
+            min-height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: stretch;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .mc {
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            margin-top: 40px;
+        }
+        .divc {
+            padding: 30px 20px 0;
+            box-sizing: content-box;
+            margin-bottom: 0;
+            flex-grow: 1;
+            margin: 0 auto 30px;
+            max-width: 935px;
+            flex-direction: column;
+        }
+        .pfc {
+            margin-bottom: 44px;
+            flex-direction: row;
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+        .imgdc {
+            flex-basis: 0;
+            flex-grow: 1;
+            margin-left: 30px;
+            flex-shrink: 0;
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+        .imgc {
+            align-items: center;
+            display: block;
+            justify-content: center;
+        }
+        .cc {
+            position: absolute;
+            top: -9px;
+            left: -9px;
+            width: 168px;
+            height: 168px;
+        }
+        .sc {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+        .ic {
+            height: 100%;
+            width: 100%;
+        }
+
+        .sc2 {
+            flex-basis: 30px;
+            flex-grow: 2;
+            min-width: 0;
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+        }
+        .divc2 {
+            margin-bottom: 20px;
+            align-items: center;
+            flex-direction: row;
+            min-width: 0;
+        }
+        .h2c {
+            display: block;
+            overflow: hidden;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 32px;
+            margin: -5px 0 -6px;
+        }
+        .divc3 {
+            margin-left: 8px;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        .sc3 {
+            background-position: 0 -369px;
+            height: 18px;
+            width: 18px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+            display: block;
+            overflow: hidden;
+        }
+        .divc4 {
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        .divc5 {
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        .divc6 {
+            margin-left: 20px;
+        }
+        .divc7 {
+            height: 30px;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        .sc4 {
+            display: flex;
+            height: 100%;
+        }
+        .sc5 {
+            margin-right: 8px;
+            display: block;
+            position: relative;
+        }
+        .btc {
+            height: 100%;
+            padding: 0 24px;
+            cursor: pointer;
+            background: #0095f6;
+            border-color: #0095f6;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 26px;
+            width: 100%;
+            color: white;
+        }
+        .sc6 {
+            position: relative;
+            width: 34px;
+            display: block;
+        }
+        .btc2 {
+            height: 100%;
+            padding: 0 12px;
+            cursor: pointer;
+            background: #0095f6;
+            border-color: #0095f6;
+            color: white;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 26px;
+            width: 100%;   
+        }
+        .divc8 {
+            padding: 4px;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+        }
+        .sc7 {
+            display: inline-block;
+        }
+
+        .divc9 {
+            flex-direction: row;
+            margin-left: 5px;
+        }
+        .btc3 {
+            align-items: center;
+            background: 0 0;
+            border: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+        }
+        .divc10 {
+            align-items: center;
+            justify-content: center;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            justify-content: flex-end;
+        }
+
+        .ulc {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding-left: 0px;
+        }
+        .lic {
+            margin-left: 0;
+            font-size: 16px;
+            margin-right: 40px;
+
+        }
+        .sc9 {
+            font-weight: 600;
+        }
+        .divc12 {
+            font-size: 13px;
+            line-height: 24px;
+            display: block;
+        }
+        .h1c {
+            display: inline;
+            font-weight: 600;
+        }
+
+        .divc11 {
+            align-items: center;
+            border-top: 1px solid #dbdbdb;
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            font-weight: 600;
+            justify-content: center;
+            letter-spacing: 1px;
+            text-align: center;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .ac {
+            margin-right: 60px;
+            align-items: center;
+            margin-top: -1px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            height: 52px;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+        }
+        .sc10 {
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+        
+        nav {
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+        .nc {
+            padding: 0;
+        }
+        .ndivc {
+            flex-basis: 55px;
+        }
+        .ndivc2 {
+            align-items: center;
+            height: 54px;
+            border-bottom: 1px solid #dbdbdb;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+            background-color: white;
+        }
+        .ndivc3 {
+            height: 54px;
+            padding: 0 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            max-width: 975px;
+            width: 100%;
+        }
+        .ndivc4 {
+
+            min-width: 40px;
+        }
+        .nac1 {
+            text-decoration: none;
+        }
+        .ndivc5 {
+
+            justify-content: flex-start;
+            align-items: center;
+            align-content: stretch;
+        }
+        .ndivc6 {
+            margin-top: 7px;
+        }
+        .nimgc {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .ndivc7 {
+            height: 28px;
+            min-width: 125px;
+            width: 215px;
+        }
+        .nipc {
+            font-size: 16px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            padding: 3px 10px 3px 26px;
+            z-index: 2;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            line-height: 18px;
+        }
+        .ndivc8 {
+            border: 1px solid #dbdbdb;
+            justify-content: center;
+            border-radius: 3px;
+            color: #8e8e8e;
+            cursor: text;
+            font-size: 14px;
+            font-weight: 300;
+            left: 0;
+            padding: 7px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            z-index: 2;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+        .ndivc9 {
+            display: inline;
+            left: -5px;
+        }
+        .nsc {
+            display: inline-block;
+            margin-right: 6px;
+            background-repeat: no-repeat;
+            background-position: -399px -321px;
+            height: 10px;
+            width: 10px;
+            background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+        }
+        .nsc2 {
+            display: inline-block;
+            max-width: 140px;
+            vertical-align: bottom;
+        }
+        .ndivc10 {
+            margin-left: -80px;
+            top: 12px;
+        }
+
+
+        .head {
+            display: flex;
+            position: fixed;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 54px;
+            top: 0;
+            padding: 0 20px;
+            border-bottom: 1px solid #dbdbdb;
+            background-color: white;
+            z-index: 1;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            left: 60px;
+            top: 10px;
+            width: 370px;
+            height: 32px;
+        }
+        .logo_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 103px;
+        }
+
+        .search_box {
+            width: 200px;
+            height: 12px;
+            padding: 7px;
+            box-sizing: content-box;
+            border: 1px solid #DBDBDB;
+            border-radius: 3px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HPh-Ws47f4UGXEU8pqvy3SDsmoyWciBllQ&usqp=CAU);
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: 38% center;
+            text-indent: 19%;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: center;
+            font-weight: 300;
+            color: #8e8e8e;
+        }
+        .magnifier {
+            position: absolute;
+            top: 35%;
+            left: 49%;
+            width: 12px;
+            height: 12px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 370px;
+        }
+        .img_size {
+            width: 22px;
+            height: 22px;
+            margin-left: 20px;
+        }
+        .my_profile {
+            height: 22px;
+            margin-left: 20px;
+            border-radius: 100%;
+        }
+
+        .arc {
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .divc13 {
+            display: block;
+            position: relative;
+            flex-direction: row;
+        }
+        .divc14 {
+            display: block;
+            width: 100%;
+            margin-right: 30px;
+        }
+        .imgc2 {
+            left: 0;
+            width: 100%;
+            position: relative;
+            margin-right: 30px;
+        }
+    </style>
+
+    <script>
+        let re='';
+        var i=0;
+
+    </script>
+</head>
+<body>
+
+    <header class="head">
+        <div class="left">
+            <a href="https://www.instagram.com/"><img class="logo_instagram_txt" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타로고"></a>
+        </div>
+        <input id="searchInput" type="search" class="search_box" placeholder="검색">
+        <div class="right">
+            <div>
+                <a href="https://www.instagram.com/">
+                    <img class="img_size" src="https://static.thenounproject.com/png/682496-200.png" alt="홈">
+                </a>
+            </div> 
+            <div>
+                <a href="https://www.instagram.com/direct/inbox/">
+                    <img class="img_size" src="https://img.icons8.com/ios/452/sent.png">
+                </a>
+            </div>          
+            <div>
+                <a href="https://www.instagram.com/explore/">
+                    <img class="img_size" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+                </a>
+            </div>
+           <div>
+                <a href="https://www.instagram.com/accounts/activity/">
+                    <img class="img_size" src="https://static.thenounproject.com/png/1380342-200.png" alt="하트">
+                </a>
+            </div>
+            <div>
+                <img class="my_profile" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/145547774_1081128432399436_3204618472784778612_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=j3SLozmdyW4AX88E0W1&edm=AIQHJ4wAAAAA&ccb=7-4&oh=402e2411a3f85bd7a59bffa5b9c61264&oe=60A898C6&_nc_sid=7b02f1" alt="내프로필">
+            </div>
+        </div>
+    </header>
+
+    <div id="entire">
+        <section class="scc">
+            <div></div>
+            <main class="mc" role="main">
+                <div class="divc">
+                    <header class="pfc">
+                        <div class="imgdc">
+                            <div class="imgc">
+                                <canvas class="cc" height="113" width="113"></canvas>
+                                <span class="sc">
+                                    <img class="ic" src="image/profileimg.jpg">
+                                </span>
+                            </div>
+                        </div>
+
+                        <section class="sc2">
+                            <div class="divc2">
+                                <h2 class="h2c">dlwlrma</h2>
+                                <div class="divc3">
+                                    <span class="sc3"></span>
+                                </div>
+                                <div class="divc4">
+                                    <div class="divc5">
+                                        <div class="divc6">
+                                            <div class="divc7">
+                                                <span class="sc4">
+                                                    <span class="sc5">
+                                                        <button class="btc">팔로우</button>
+                                                    </span>
+                                                    <span class="sc6">
+                                                        <button class="btc2">
+                                                            <div class="divc8">
+                                                                <span class="sc7">
+                                                                    <svg></svg>
+                                                                </span>
+                                                            </div>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divc9">
+                                    <button class="btc3">
+                                        <div class="divc10">
+                                            <img class="icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div></div>
+                            <ul class="ulc">
+                                <li class="lic">
+                                    <span class="sc8">게시물 <span class="sc9">583</span>
+                                    </span>
+                                </li>
+                                <li class="lic">
+                                    <span class="sc8">팔로워 <span class="sc9">20.2백만</span>
+                                    </span>
+                                </li>
+                                <li class="lic">
+                                    <span class="sc8">팔로우 <span class="sc9">112</span>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="divc12">
+                                <h1 class="h1c">이지금 IU</h1>
+                                <p style="margin-top: 0;">LILAC🌱🌱💚🌱🌱</p>
+                            </div>
+                        </section>
+                    </header>
+
+                    <div class="divc11">
+                        <a class="ac" href="https://www.instagram.com/dlwlrma/">
+                            <span class="sc10">
+                                <span>게시물</span>
+                            </span>
+                        </a>
+                        <a class="ac" href="https://www.instagram.com/dlwlrma/channel/">
+                            <span class="sc10">
+                                <span>IGTV</span>
+                            </span>
+                        </a>
+                        <a class="ac" href="https://www.instagram.com/dlwlrma/tagged/">
+                            <span class="sc10">
+                                <span>태그됨</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <article class="arc">
+                            <div id="repeat">
+                                <img src="/image/image_2.jpg">
+                                <!--                                
+                                    <div style="flex-direction: column; padding-top: 0px;" >
+                                        <div class="divc13">
+                                            <div class="divc14">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </main>
+
+        </section>
+    </div>
+</body>
+</html>
