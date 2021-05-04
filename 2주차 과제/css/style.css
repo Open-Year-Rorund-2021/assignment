@@ -141,3 +141,7 @@ header{
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
   }
+
+  #modal_btn{
+      cursor:pointer;
+  }
