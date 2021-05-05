@@ -45,6 +45,7 @@ header{
 .top{
     height: 28px;
     padding : 16px;
+    margin-top : 30px;
     border : 1px solid #efefef;
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -86,12 +87,14 @@ header{
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef;
     background-color: #FFFFFF;
+    padding-bottom: 2px;
     display: flex;
     align-items: center;
 }
 
 .comments{
     height : 56px;
+    margin-bottom: 20px;
     border-left : 1px solid #efefef;
     border-right : 1px solid #efefef;
     border-bottom : 1px solid #efefef;

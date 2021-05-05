@@ -27,6 +27,7 @@ body {
     height : 31.2px;
     padding : 5px 9px;
     margin-top : 15px;
+    cursor : pointer;
 }
 
 .intro{
