@@ -19,10 +19,10 @@
             <div class="outer">
                 <button class="btn"><b>Facebook으로 로그인</b></button>
                 <div style="color: #8E8E8E; font-size:15px; margin-top:5px;">---------------- 또는 -----------------</div>
-                <input id="id" type="text" placeholder="휴대폰 번호 또는 이메일 주소"><img src='./css/images/x.JPG'><img src='./css/images/ok.JPG'>
-                <input id="name" type="text" placeholder="성명">
-                <input id="nickname" type="text" placeholder="사용자 이름">
-                <input id="password" type="password" placeholder="비밀번호">
+                <input id="number" type="text" placeholder="휴대폰 번호 또는 이메일 주소"><img id="x" src='./css/images/x.JPG'><img id="ok" src='./css/images/ok.JPG'>
+                <input id="name" type="text" placeholder="성명"><img id="x2" src='./css/images/x.JPG'><img id="ok2" src='./css/images/ok.JPG'>
+                <input id="nickname" type="text" placeholder="사용자 이름"><img id="x3" src='./css/images/x.JPG'><img id="ok3" src='./css/images/ok.JPG'>
+                <input id="password" type="password" placeholder="비밀번호"><img id="x4" src='./css/images/x.JPG'><img id="ok4" src='./css/images/ok.JPG'>
                 <button class="btn" id="join"><b>가입</b></button>
                 <div class="explain">가입하면 Instragram의 <b>약관</b>, <b>데이터 정책</b> 및 <b>쿠키<br /> 정책</b>에 동의하게 됩니다.</div>
             </div>
@@ -50,50 +50,114 @@
 
     <script>
 
-        let id = document.getElementById("id").value;
-        let name = document.getElementById("name").value;
-        let nickname = document.getElementById("nickname").value;
-        let password = document.getElementById("password").value;
-
-        let join = document.getElementById("join").addEventListener('click',function(){
-            
-        })
-        /*let idPattern = /^[A-Za-z]{1}[A-Za-z0-9]{3,19}$/;
+        let idPattern = /^[A-Za-z]{1}[A-Za-z0-9]{3,19}$/;
         let pwPattern = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,16}$/;
         let emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
         let phonePattern = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
-        */
+        let flag = 0, flag2 = 0, flag3 = 0, flag4 = 0;
 
-        function idcheck(id){
+        let number_check = document.getElementById("number").addEventListener('blur', function(){
 
-            if (id == '' || isEmail(id)){
-                document.getElementById("id").style.display = none;
+            if (document.getElementById("number").value == ''){
+                document.getElementById("ok").style.display = 'none';
+                document.getElementById("x").style.display = 'none';
+                flag = 0;
             }
-    
+
+            else if(emailPattern.test(document.getElementById('number').value) || phonePattern.test(document.getElementById('number').value)){
+                document.getElementById('ok').style.display = 'block';
+                document.getElementById('x').style.display = 'none';
+                flag = 1;
+            }
+
             else{
-                document.getElementById("id").style.display = block;
+                document.getElementById('ok').style.display = 'none';
+                document.getElementById('x').style.display = 'block';
+                flag = 0;
             }
-        }
+        })
 
- 
-        // 이메일 체크 정규식
-        function isEmail(asValue) {
+        let name_check = document.getElementById("name").addEventListener('blur', function(){
 
-            let regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-            return regExp.test(asValue); // 형식에 맞는 경우 true 리턴	
-        }
+            if (document.getElementById("name").value == ''){
+                document.getElementById("ok2").style.display = 'none';
+                document.getElementById("x2").style.display = 'none';
+                flag2 = 0;
+            }
 
-        function isCelluar(asValue) {
+            else if(document.getElementById("name").value.length < 40){
+                document.getElementById('ok2').style.display = 'block';
+                document.getElementById('x2').style.display = 'none';
+                flag2 = 1;
+            }
 
-            let regExp = /^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
-            return regExp.test(asValue); // 형식에 맞는 경우 true 리턴
-        }
+            else{
+                document.getElementById('ok2').style.display = 'none';
+                document.getElementById('x2').style.display = 'block';
+                flag2 = 0;
+            }
+        })
 
-        function isJobPassword(asValue) {
+        let nickname_check = document.getElementById("nickname").addEventListener('blur', function(){
 
-            let regExp = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,10}$/; //  8 ~ 10자 영문, 숫자 조합
-            return regExp.test(asValue); // 형식에 맞는 경우 true 리턴
-        }
+            if (document.getElementById("nickname").value == ''){
+                document.getElementById("ok3").style.display = 'none';
+                document.getElementById("x3").style.display = 'none';
+                flag3 = 0;
+            }
+
+            else if(idPattern.test(document.getElementById('nickname').value)){
+                document.getElementById('ok3').style.display = 'block';
+                document.getElementById('x3').style.display = 'none';
+                flag3 = 1;
+            }
+
+            else{
+                document.getElementById('ok3').style.display = 'none';
+                document.getElementById('x3').style.display = 'block';
+                flag3 = 0;
+            }
+        });
+
+        let password_check = document.getElementById("password").addEventListener('blur', function(){
+
+            if (document.getElementById("password").value == ''){
+                document.getElementById("ok4").style.display = 'none';
+                document.getElementById("x4").style.display = 'none';
+                flag4 = 0;
+            }
+
+            else if(pwPattern.test(document.getElementById('password').value)){
+                document.getElementById('ok4').style.display = 'block';
+                document.getElementById('x4').style.display = 'none';
+                flag4 = 1;
+            }
+
+            else{
+                document.getElementById('ok4').style.display = 'none';
+                document.getElementById('x4').style.display = 'block';
+                flag4 = 0;
+            }
+        });
+
+        let join = document.getElementById("join").addEventListener('click',function(){
+            
+            if ((flag + flag2 + flag3 + flag4) == 4){
+                alert(`가입이 완료되었습니다.\n휴대폰 및 이메일 : ${document.getElementById('number').value}\n성명 : ${document.getElementById('name').value}\n사용자 이름 : ${document.getElementById('nickname').value}
+    `)
+    }
+        });
+
+        let join2 = document.getElementById("join").addEventListener('blur',function(){
+
+            if ((flag + flag2 + flag3 + flag4) == 4){
+                document.getElementById('join').style.opacity = 1;
+            }
+
+            else{
+                document.getElementById('join').style.opacity = 0.5;
+            }
+        });
 
     </script>
 </body>

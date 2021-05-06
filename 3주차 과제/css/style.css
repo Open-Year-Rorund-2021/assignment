@@ -105,3 +105,35 @@ input{
     text-align: center;
     align-items: center;
 }
+
+#ok, #x{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 32.8%;
+    left : 56%;
+}
+
+#ok2, #x2{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 38.4%;
+    left : 56%;
+}
+
+#ok3, #x3{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 44%;
+    left : 56%;
+}
+
+#ok4, #x4{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 49.4%;
+    left : 56%;
+}
