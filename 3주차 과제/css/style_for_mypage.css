@@ -186,3 +186,17 @@ header{
 #modal_btn, #person{
     cursor:pointer;
 }
+
+#search{
+    font-size : 12px;
+    font-weight:normal;
+    margin-top: -25px;
+    margin-left : 90px;
+    color : #8E8E8E;
+    z-index: -1;
+}
+
+.image{
+    width : 280.4px;
+    height : 280.4px;
+}
