@@ -27,7 +27,6 @@ header{
 
 .main{
     margin-top : 100px;
-    margin-right : 200px;
     display : flex;
     justify-content: center;
     background: #FAFAFA;
@@ -77,43 +76,22 @@ header{
     background-color: #FFFFFF;
 }
 
-.container{
-    display : flex;
-    margin-top : 90px;
-    margin-right : 200px;
-    justify-content: center;
+#like, #like0, #like1, #like2{
+    display : none;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
 }
 
-.myself{
-    display : flex;
-    flex-direction: column;
+#cont, #cont0, #cont1, #cont2{
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
 }
 
-.profile{
-    width : 150px;
-    height : 150px;
-    border-radius: 70%;
-}
-
-.frame{
-    width : 244.66px;
-    height : 150px;
-}
-
-.first{
-    margin : 0px 0px 20px;
-}
-
-#edit{
-    width : 93.85px;
-    height : 29.6px;
-    font-size: 14px;
-    padding : 3px 5px;
-    font-weight: bold;
-    background: #FAFAFA;
-    border : 1px solid #dbdbdb;
-    border-radius: 6.5%;
-}
 .comments{
     height : 56px;
     margin-bottom: 20px;
@@ -125,6 +103,12 @@ header{
     display: flex;
     align-items: center;
 }
+
+#appendcomments, #appendcomments0, #appendcomments1{
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+} 
 
 #my_modal{
     display: none;
@@ -183,20 +167,15 @@ header{
     border : 0px;
 }
 
-#modal_btn, #person, #home{
-    cursor:pointer;
-}
+  #modal_btn, #person, #home{
+      cursor:pointer;
+  }
 
-#search{
+  #search{
     font-size : 12px;
     font-weight:normal;
     margin-top: -25px;
     margin-left : 90px;
     color : #8E8E8E;
     z-index: -1;
-}
-
-.image{
-    width : 280.4px;
-    height : 280.4px;
 }
