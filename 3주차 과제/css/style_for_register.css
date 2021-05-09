@@ -1,5 +1,7 @@
-body {
-    background-color: #FAFAFA;
+body{
+    background : #FAFAFA;
+    width : 95%;
+    height : 95%;
 }
 
 .container{
