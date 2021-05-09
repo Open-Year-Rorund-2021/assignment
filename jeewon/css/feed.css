@@ -89,6 +89,24 @@ nav{
   margin-top: 45px;
 }
 
+.zoom{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .post{
   background-color: white;
   max-width: 600px;
@@ -198,18 +216,17 @@ nav{
 }
 
 .cmt{
-  padding-top: 20px;
-  padding-left:15px;
+  display: flex;
+  padding: 15px 15px;
   border-top: 1px solid #dbdbdb;
   align-items: center;
   flex-direction: row;
 }
 
 .text{
-  display: inline;
   height: 30px;
   border: none;
-  width: 400px;
+  width: 500px;
   margin-left: 15px;
 }
 
