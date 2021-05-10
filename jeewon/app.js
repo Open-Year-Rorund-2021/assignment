@@ -8,7 +8,7 @@ app.use(static(path.join(__dirname, '/')));
 
 app.set('port', process.env.PORT || 3000);
 app.get('/', function(req, res){
-    res.redirect('index.html');
+    res.redirect('feed.html');
 });
 
 http.createServer(app).listen(app.get('port'),function(){
