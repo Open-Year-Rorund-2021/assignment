@@ -40,6 +40,11 @@ nav{
     width: 190px;
 }
 
+.search > input[type=text]:focus{
+  background: none;
+  text-align: left;
+}
+
 .icons{
   justify-content: center;
 }
@@ -181,9 +186,12 @@ nav{
 .mid{
   font-weight: normal;
   font-size: 17px;
-  text-decoration: underline;
   margin-left: 18px;
   padding-top: 5px;
+}
+
+.mid:hover{
+  text-decoration: underline;
 }
 
 .loadcmt{
@@ -199,7 +207,7 @@ nav{
 
 .c{
   padding-top: 7px;
-  padding-left: 10px;
+  padding-left: 13px;
 }
 
 .respond{

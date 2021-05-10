@@ -41,6 +41,13 @@ nav{
   flex-direction: row;
 }
 
+.magnify{
+    left: 90px;
+    position: relative;
+    top: 1px;
+    z-index: 3;
+}
+
 .search > input{
     border: 1px solid #dbdbdb;
     border-radius: 3px;
@@ -53,6 +60,11 @@ nav{
     text-align: center;
     height: 23px;
     width: 190px;
+}
+
+.search > input[type=text]:focus{
+  background: none;
+  text-align: left;
 }
 
 .icons{
