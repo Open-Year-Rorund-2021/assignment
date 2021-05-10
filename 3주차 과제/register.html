@@ -70,7 +70,7 @@
                 flag = 1;
             }
 
-            else{
+            else if(!(emailPattern.test(document.getElementById('number').value) || phonePattern.test(document.getElementById('number').value))){
                 document.getElementById('ok').style.display = 'none';
                 document.getElementById('x').style.display = 'block';
                 flag = 0;
@@ -145,10 +145,45 @@
             if ((flag + flag2 + flag3 + flag4) == 4){
                 alert(`가입이 완료되었습니다.\n휴대폰 및 이메일 : ${document.getElementById('number').value}\n성명 : ${document.getElementById('name').value}\n사용자 이름 : ${document.getElementById('nickname').value}
     `)
-    }
+        location.href="./feed.html";
+
+        }
         });
 
-        let join2 = document.getElementById("join").addEventListener('blur',function(){
+        let join2 = document.getElementById("number").addEventListener('blur',function(){
+
+            if ((flag + flag2 + flag3 + flag4) == 4){
+                document.getElementById('join').style.opacity = 1;
+            }
+
+            else{
+                document.getElementById('join').style.opacity = 0.5;
+            }
+        });
+
+        let join3 = document.getElementById("name").addEventListener('blur',function(){
+
+            if ((flag + flag2 + flag3 + flag4) == 4){
+                document.getElementById('join').style.opacity = 1;
+            }
+
+            else{
+                document.getElementById('join').style.opacity = 0.5;
+            }
+        });
+
+        let join4 = document.getElementById("nickname").addEventListener('blur',function(){
+
+            if ((flag + flag2 + flag3 + flag4) == 4){
+                document.getElementById('join').style.opacity = 1;
+            }
+
+            else{
+                document.getElementById('join').style.opacity = 0.5;
+            }
+        });
+
+        let join5 = document.getElementById("password").addEventListener('blur',function(){
 
             if ((flag + flag2 + flag3 + flag4) == 4){
                 document.getElementById('join').style.opacity = 1;

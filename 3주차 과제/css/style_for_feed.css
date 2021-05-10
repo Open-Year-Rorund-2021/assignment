@@ -104,7 +104,6 @@ header{
 
 .comments{
     height : 56px;
-    margin-bottom: 20px;
     border-left : 1px solid #efefef;
     border-right : 1px solid #efefef;
     border-bottom : 1px solid #efefef;
@@ -177,7 +176,7 @@ header{
     border : 0px;
 }
 
-  #modal_btn, #person, #home{
+  #modal_btn, #person, #home, #home2{
       cursor:pointer;
   }
 

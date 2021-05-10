@@ -27,16 +27,9 @@ header{
 
 .main{
     margin-top : 100px;
-    margin-right : 200px;
     display : flex;
     justify-content: center;
     background: #FAFAFA;
-}
-
-#img{
-    display:flex;
-    justify-content: center;
-    margin : 0 auto;
 }
 
 .body{
@@ -158,22 +151,10 @@ header{
     display: flex;
     align-items: center;
     z-index: 2;
-}
-
-#sue{
-    color:red;
-    font-size: 14px;
-    font-weight: bold;
-    height : 48px;
-    padding : 4px 8px;
-    align-items: center;
-    z-index: 2;
+    cursor : pointer;
 }
 
 #modal_close_btn{
-    position: absolute;
-    top : 10px;
-    left : 380px;
     cursor : pointer;
     z-index: 2;
 }
@@ -183,8 +164,13 @@ header{
     border : 0px;
 }
 
-#modal_btn, #person, #home{
+#modal_btn, #person, #home, #home2, .profile{
     cursor:pointer;
+}
+
+#change{
+    color : #8E8E8E;
+    font-weight: bold;
 }
 
 #search{
@@ -199,4 +185,7 @@ header{
 .image{
     width : 280.4px;
     height : 280.4px;
+    margin-top : 1px;
+    margin-left : 3px;
+    cursor : pointer;
 }
