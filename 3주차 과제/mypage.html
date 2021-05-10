@@ -50,11 +50,12 @@
                 <div class="first"><b>오픈이어라운드 과제용 계정!</b></div>
             </div>
         </section>
-
     </div>
+    
+    <hr>
 
     <div class="main">
-        <div id="inner"><img class="image" src="./css/images/hanriver.jpg"><img class="image" src="./css/images/instagram.png"><img class="image" src="./css/images/광화문.jpg"><br><img class="image" src="./css/images/광화문.jpg"></div>
+        <div id="inner"></div>
     </div>
 
     <div id="my_modal">
@@ -67,17 +68,42 @@
         </div>
     </div>
 
+    <div id="my_modal2">
+        <div id="my_modal_child2">
+        </div>
+    </div>
+    
+
     <script>
         
         let photos = ['광화문.jpg', 'hanriver.jpg', 'instagram.png','hanriver.jpg'];
         let a =''
         for(let i = 0;i < photos.length;i++){
-            a += `<img class="image" src="./css/images/${photos[i]}">`; 
+            a += `<img id="image${i}" onclick="clickPhoto(${i});" src="./css/images/${photos[i]}" style="width : 280.4px; height : 280.4px; margin-top : 1px; margin-left : 3px; cursor : pointer;">`; 
             if (i % 3 == 2){
                 a += `<br>`;
             }
         }
 
+        function clickPhoto(k){
+
+            let a = '';
+            a += `<div class="child_content"><img src="./css/images/${photos[k]}" style="width : 150.4px; height : 50.4px;</div>
+            <div class="child_content" id="change">모달 준비중</div>
+            <div id="modal_close_btn2" class="child_content">취소</div>`;
+            document.getElementById('my_modal_child2').innerHTML = a;
+
+            document.getElementById('image'+k).addEventListener('click',function(){
+                let q = document.getElementById('my_modal2');
+                q.style.display = 'block';
+            });
+    
+            document.getElementById('modal_close_btn2').addEventListener('click',function(){
+                document.getElementById('my_modal2').style.display = 'none';
+            });
+
+        }
+        
         document.getElementById('inner').innerHTML = a;
         document.getElementById('input_control').addEventListener('focus',function(){
             
