@@ -6,354 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <link rel="icon" href="insta.ico">
-
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        body {
-            background-color: #fafafa;
-            display: block;
-        }
-
-        .head {
-            display: flex;
-            position: fixed;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            height: 54px;
-            top: 0;
-            padding: 0 20px;
-            border-bottom: 1px solid #dbdbdb;
-            background-color: white;
-            z-index: 1;
-            align-items: center;
-        }
-
-        .left {
-            display: flex;
-            position: relative;
-            justify-content: flex-start;
-            align-items: center;
-            left: 60px;
-            top: 10px;
-            width: 370px;
-            height: 32px;
-        }
-        .logo_box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo {
-            width: 103px;
-        }
-
-        .search_box {
-            width: 200px;
-            height: 12px;
-            padding: 7px;
-            box-sizing: content-box;
-            border: 1px solid #DBDBDB;
-            border-radius: 3px;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HPh-Ws47f4UGXEU8pqvy3SDsmoyWciBllQ&usqp=CAU);
-            background-size: 14px;
-            background-repeat: no-repeat;
-            background-position: 38% center;
-            text-indent: 19%;
-            font-size: 14px;
-            text-align: center;
-            vertical-align: center;
-            font-weight: 300;
-            color: #8e8e8e;
-        }
-        .magnifier {
-            position: absolute;
-            top: 35%;
-            left: 49%;
-            width: 12px;
-            height: 12px;
-        }
-
-        .right {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 370px;
-        }
-        .img_size {
-            width: 22px;
-            height: 22px;
-            margin-left: 20px;
-        }
-        .my_profile {
-            height: 22px;
-            margin-left: 20px;
-            border-radius: 100%;
-        }
-        
-        .none {
-            width: auto;
-            height: 40px;
-            padding-top: 75px;
-            background-color: #fafafa;
-        }
-        article {
-            position: relative;
-            background-color: #fafafa;
-            border-radius: 3px;
-            border: 1px solid #DBDBDB;
-            margin-bottom: 60px;
-        }
-        .main_body {
-            display: flex;
-            position: relative;
-            justify-content: center;
-            left: 20px;
-        }
-
-        .empty_box {
-            height: 26px;
-        }
-
-        .feedhead {
-            height: 60px;
-            padding: 0 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .feed_profile {
-            display: flex;
-            align-items: center;
-        }
-        .img_profile {
-            width: 32px;
-            height: 32px;
-            border: 1px solid #fafafa;
-            border-radius: 100%;
-        }
-        .user_id {
-            margin-right: 5px;
-            margin-left: 7px;
-            font-weight: 500;
-            font-size: 14px;
-        }
-        .modalbutton {
-            background-color: white;
-            cursor: pointer;
-            border: none;
-        }
-        .icon_react {
-            width: 24px;
-            height: 24px;
-            justify-content: flex-end;
-        }
-
-        .feed_picture {
-            width: 600px;
-            display: block;
-        }
-
-        .feed_bottom {
-            height: 40px;
-            padding: 0 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .feed_left {
-            display: flex;
-            align-items: center;
-            margin-right: 12px;
-        }
-        .feed_icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 7px;
-        }
-        .bookmark {
-            display: flex;
-            justify-content: flex-end;
-            width: 24px;
-            height: 24px;
-        }
-
-        .feed_article {
-           display: flex; 
-           justify-content: flex-start;
-           align-items: flex-start;
-        }
-        .feed_article_box {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 0 16px 0 16px;
-        }
-        .comments_container {
-            display: flex;
-        }
-        .comments {
-            font-size: 14px;
-            line-height: 18px;
-            padding: 2px;
-            display: block;
-        }
-        .comments1 {
-            padding: 2px;
-            font-size: 14px;
-            line-height: 18px;
-            color: #8e8e8e;
-            display: block;
-        }
-        .comments1_box {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-        .comments2 {
-            font-size: 10px;
-            line-height: 18px;
-            color: #8e8e8e;
-            letter-spacing: 0.2px;
-            display: block;
-        }
-
-        .inputContainer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 56px;
-            padding: 0 12px 0 12px;
-            border-top: 1px solid #efefef;
-        }
-        .type_comment {
-            display: flex;
-            justify-content: flex-start;
-            width: 530px;
-            font-size: 14px;
-            color: #8e8e8e;
-            border-style: none;
-        }
-        .inputBox {
-            background-color: #fafafa;
-            color: black;
-            outline: none;
-            width: 550px;
-            height: 50px;
-            border-style: none;
-        }
-        .buttonBox {
-            background-color: #fafafa;
-            color: #C0E0FD;
-            outline: none;
-            border-style: none;
-        }
-        button {
-            display: inline-block;
-            text-align: center;
-            align-items: flex-start;
-            padding: 1px 6px;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            padding-top: 80px;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 200px auto;
-            padding: 20px;
-            border: 1px solid #dbdbdb;
-            width: 300px;
-            border-radius: 10px;
-            justify-content: center;
-            align-items: center;   
-            text-align: center;
-            line-height: 200%;
-        }
-
-        .modal_entire {
-            margin-top: 0;
-            background-color: white;
-            border-radius: 12px;
-            max-height: 100%;
-            overflow: hidden;
-            align-items: stretch;
-            box-sizing: border-box;
-            display: flex;
-            position: relative;
-            justify-content: center;
-        }
-        .modal_line {
-            margin-top: 0;
-            align-items: stretch;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-        }
-        .modal_red {
-            margin-top: 0;
-            background-color: white;
-            border-top: none;
-            color: red;
-            font-weight: 700;
-            cursor: pointer;
-            line-height: 1.5;
-            min-height: 48px;
-            padding: 4px 8px;
-            text-align: center;
-            font-size: 14px;
-        }
-        .line {
-            border: none;
-        }
-        .modal_black {
-            margin-top: 0;
-            background-color: white;
-            border-top: none;
-            font-weight: 700;
-            cursor: pointer;
-            line-height: 1.5;
-            min-height: 48px;
-            padding: 4px 8px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .close {
-            color: black;
-            font-size: 14px;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-
-
+    <link rel="stylesheet" href="css/feed.css"> 
+    
 </head>
 <body>
     <header class="head">
         <div class="left">
-            <a href="https://www.instagram.com/"><img class="logo_instagram_txt" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타로고"></a>
+            <a href="feed.html"><img class="logo_instagram_txt" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타로고"></a>
         </div>
         <input id="searchInput" type="search" class="search_box" placeholder="검색">
         <div class="right">
@@ -364,7 +23,7 @@
             </div> 
             <div>
                 <a href="https://www.instagram.com/direct/inbox/">
-                    <img class="img_size" src="https://img.icons8.com/ios/452/sent.png">
+                    <img class="img_size" src="https://img.icons8.com/ios/452/sent.png"> 
                 </a>
             </div>          
             <div>
@@ -378,8 +37,9 @@
                 </a>
             </div>
             <div>
-                <img class="my_profile" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/145547774_1081128432399436_3204618472784778612_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=j3SLozmdyW4AX88E0W1&edm=AIQHJ4wAAAAA&ccb=7-4&oh=402e2411a3f85bd7a59bffa5b9c61264&oe=60A898C6&_nc_sid=7b02f1" alt="내프로필">
-                <a style="cursor: pointer;" href="/user.html"></a>
+                <a href="user.html">
+                    <img class="my_profile" src="image/profileimg.jpg" alt="내프로필">
+                </a>                
             </div>
         </div>
     </header>
@@ -387,90 +47,90 @@
 
     <!--body-->
     <div class="none"></div>
-    <div class="main_body">
-        <article>
-            <header class="feedhead">
-                <div class="feed_profile">
-                    <a href="https://www.instagram.com/hhanni">
-                        <img class="img_profile" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/145547774_1081128432399436_3204618472784778612_n.jpg?tp=1&_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=j3SLozmdyW4AX88E0W1&edm=AIQHJ4wAAAAA&ccb=7-4&oh=402e2411a3f85bd7a59bffa5b9c61264&oe=60A898C6&_nc_sid=7b02f1">
-                    </a>
-                    <span class="user_id">hhanni</span>
-                </div>
-                <button type="button" class="modalbutton" id="myBtn">
-                    <img class="icon_react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
-                </button>
+    <div class="main_body" id="refeed">
+    </div>
+    <script>
+        let re='';
+        let picture = ['image/image_1.jpg', 'image/image_2.jpg', 'image/image_3.jpg'];
+        let i = 0;
 
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal_entire">
-                            <div class="modal_line">
-                                <button class="modal_red line">신고</button>
-                                <button class="modal_red line">팔로우 취소</button>
-                                <button class="modal_black line">게시물로 이동</button>
-                                <button class="modal_black line">공유 대상...</button>
-                                <button class="modal_black line">링크 복사</button>
-                                <button class="modal_black line">퍼가기</button>
-                                <button class="modal_black line close">취소</button>
+        for(i=0; i<3; i++) {
+            re += ` <article>
+            <header class="feedhead">
+                        <div class="feed_profile">
+                            <a href="user.html">
+                                <img class="img_profile" src="image/profileimg.jpg">
+                            </a>
+                            <span class="user_id">hhanni</span>
+                        </div>
+                        <button type="button" class="modalbutton" id="myBtn">
+                            <img class="icon_react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                        </button>
+
+                        
+
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal_entire">
+                                    <div class="modal_line">
+                                        <button class="modal_red line">신고</button>
+                                        <button class="modal_red line">팔로우 취소</button>                                            
+                                        <button class="modal_black line">게시물로 이동</button>
+                                        <button class="modal_black line">공유 대상...</button>
+                                        <button class="modal_black line">링크 복사</button>
+                                        <button class="modal_black line">퍼가기</button>
+                                        <button class="modal_black line close">취소</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    
+                    </header>
+
+                    <div>
+                        <img class="feed_picture" src="`+picture[i]+`" alt="피드 사진">
                     </div>
-                </div>
-                <script>
-                    var modal = document.getElementById('myModal');
-                    var btn = document.getElementById("myBtn");
-                    var span = document.getElementsByClassName("close")[0];                                          
-
-                    btn.onclick = function() {
-                        modal.style.display = "block";
-                    }
-                    span.onclick = function() {
-                        modal.style.display = "none";
-                    }
-
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-            </header>
-
-            <div>
-                <img class="feed_picture" src="image/image_1.jpg" alt="피드 사진">
-            </div>
-                
-            <div class="feed_bottom">
-                <div class="feed_left">
-                    <img class="feed_icon" src="https://static.thenounproject.com/png/1380342-200.png" alt="하트">
-                    <img class="feed_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="코멘트">
-                    <img class="feed_icon" src="https://img.icons8.com/ios/452/sent.png" alt="DM">
-                </div>
-                <img class="bookmark" src="https://static.thenounproject.com/png/3318724-200.png" alt="북마크">
-            </div>
-
-                <div class="feed_article">
-                    <div class="feed_article_box">
-                        <div class="comments_container">
-                            <div class="comments"><span style="font-weight: bold;">hhanni</span> rainbow</div>
-                            <div class="comments1">더 보기</div>
+                        
+                    <div class="feed_bottom">
+                        <div class="feed_left">
+                            <img class="feed_icon" id="chheart" onclick="changeheart()" border ="0" src="https://static.thenounproject.com/png/1380342-200.png" alt="하트">
+                            <img class="feed_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="코멘트">
+                            <img class="feed_icon" src="https://img.icons8.com/ios/452/sent.png" alt="DM">
                         </div>
-                        <div class="comments1">댓글 모두 보기</div>
-                        <div class="comments1_box">
-                            <div class="comments"><span style="font-weight: bold;">abcde</span> fghijk</div>
+                        <img class="bookmark" src="https://static.thenounproject.com/png/3318724-200.png" alt="북마크">
+                    </div>
+
+                        <div class="feed_article">
+                            <div class="feed_article_box">
+                                <div class="feed_heart"><span style="font-weight: bold;">좋아요 </span><span id="cha"> 103개</span></div>
+                                <div class="comments_container">
+                                    <div class="comments"><span style="font-weight: bold;">hhanni</span> 안녕</div>
+                                    <div class="comments1">더 보기</div>
+                                </div>
+                                <div class="comments1">댓글 모두 보기</div>
+                                <div class="comments1_box">
+                                    <div class="comments"><span style="font-weight: bold;">hihihi</span> w0w</div>
+                                </div>
+                                <div class="comments2">1일 전</div>
+                            </div>
                         </div>
-                        <div class="comments2">1일 전</div>
+                        <div class="inputContainer">
+                            <div class="type_comment">
+                                <input class="inputBox" type="text" placeholder="댓글 달기...">
+                            </div>
+                            <span>
+                                <button class="buttonBox" type="submit">게시</button>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="inputContainer">
-                    <div class="type_comment">
-                        <input class="inputBox" type="text" placeholder="댓글 달기...">
-                    </div>
-                    <span>
-                        <button class="buttonBox" type="submit">게시</button>
-                    </span>
-                </div>
-            </div>
-        </article>
-    </div>
+            </article>
+            <div class="mb"></div>
+            `;
+        }
+
+        document.getElementById('refeed').innerHTML = re;
+    </script>
+    <script src="js/modal.js"></script>
+    <script src="js/heart.js"></script>
 </body>
 </html>
