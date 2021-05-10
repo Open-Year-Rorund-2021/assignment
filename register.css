@@ -37,15 +37,14 @@ body {
   margin-bottom: 10px;
 }
 
-.username-form {
+#normal-login > div {
   position: relative;
-  margin: 20px auto 5px;
+  margin: 5px auto 0px;
   width: 270px;
   height: 40px;
 }
 
-.username-form > label,
-.password-form > label {
+#normal-login label {
   position: absolute;
   height: 36px;
   font-size: 12px;
