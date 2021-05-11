@@ -55,7 +55,23 @@
 # 4주차
 ## JavaScript (라우팅, GET, POST)
 
+- Ubuntu 명령어 : https://velog.io/@devyang97/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-Ubuntu-%EC%82%AC%EC%9A%A9
+
+## Features
 
 
 # 5주차
-## 6주차 (jQuery, Ajax, JSON)
+## Node.js (쿠키, 세션)
+
+- https://opentutorials.org/module/3549/21032
+
+## Features
+node.js 세션 기능을 활용해서 지금까지 한 과제에 로그인 기능을 추가
+![5주차 과제 1](https://user-images.githubusercontent.com/41178045/117766161-1e538680-b26a-11eb-911c-0237782610e1.gif)
+- 로그인을 하지 않고 localhost:0000/instagram 이런식으로 피드 페이지와 개인 페이지에 직접 접근하려는 경우는 다시 로그인 화면으로 돌아와야 합니다
+![5주차 과제 2](https://user-images.githubusercontent.com/41178045/117766174-20b5e080-b26a-11eb-8d5e-b5cacc2bfc7f.gif)
+- 그인에 성공하면 로그인 정보가 세션에 저장되고 그 정보를 유지해야합니다.
+
+
+# 6주차
+## jQuery, Ajax, JSON
