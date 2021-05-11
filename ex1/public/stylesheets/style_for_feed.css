@@ -1,0 +1,190 @@
+body{
+    background : #FAFAFA;
+    width : 95%;
+    height : 95%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    padding: 1rem;
+    color: black;
+    background: #FFFFFF;
+    font-weight: bold;
+    display:flex;
+    position : fixed;
+    align-items: center;
+    top : 0;
+    left : 0;
+    right : 0;
+    border : 1px solid #efefef;
+    border-radius : 3px;
+}
+
+.main{
+    margin-top : 100px;
+    display : flex;
+    justify-content: center;
+    background: #FAFAFA;
+}
+
+#img, #img0, #img1, #img2{
+    display:flex;
+    justify-content: center;
+    margin : 0 auto;
+}
+
+.body{
+    margin-top : 20px;
+}
+
+.top{
+    height: 28px;
+    padding : 16px;
+    margin-top : 30px;
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+#outer0, #outer1{
+    transition-delay: 500ms;
+}
+
+.contents{
+    height:500px;
+    background-color: #FFFFFF;
+    margin-top : -2px;
+}
+
+.footer{
+    height : 40px;
+    border-top : 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    display : flex;
+    align-items: center;
+}
+
+.input_box{
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+#like, #like0, #like1, #like2{
+    display : none;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
+}
+
+.profile{
+    width : 150px;
+    height : 150px;
+    border-radius: 70%;
+}
+
+#cont, #cont0, #cont1, #cont2{
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #FFFFFF;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.comments{
+    height : 56px;
+    border-left : 1px solid #efefef;
+    border-right : 1px solid #efefef;
+    border-bottom : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+#appendcomments, #appendcomments0, #appendcomments1{
+    border : 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+} 
+
+#my_modal{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+#my_modal_child{
+    background:#FFFFFF;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    border-radius: 12px;
+    border : 1px solid #efefef;
+    width : 400px;
+    position: absolute;
+    left : 544px;
+    top : 224px;
+    z-index: 2;
+}
+
+.child_content{
+    height : 48px;
+    padding : 4px 8px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#sue{
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+    height : 48px;
+    padding : 4px 8px;
+    align-items: center;
+    z-index: 2;
+}
+
+#modal_close_btn{
+    position: absolute;
+    top : 10px;
+    left : 380px;
+    cursor : pointer;
+    z-index: 2;
+}
+
+.footer button{
+    background-color: #FFFFFF;
+    border : 0px;
+}
+
+  #modal_btn, #person, #home, #home2{
+      cursor:pointer;
+  }
+
+  #search{
+    font-size : 12px;
+    font-weight:normal;
+    margin-top: -25px;
+    margin-left : 90px;
+    color : #8E8E8E;
+    z-index: -1;
+}

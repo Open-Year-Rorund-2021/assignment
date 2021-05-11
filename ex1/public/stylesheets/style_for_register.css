@@ -1,0 +1,145 @@
+body{
+    background : #FAFAFA;
+    width : 95%;
+    height : 95%;
+}
+
+.container{
+    margin-top : 35px;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    background-color: #0095F6;
+    border : 1px solid transparent;
+    border-radius: 5px;
+    font-size:14px;
+    color : #FFFFFF;
+    width : 268px;
+    height : 31.2px;
+    padding : 5px 9px;
+    margin-top : 15px;
+    cursor : pointer;
+}
+
+.intro{
+    font-size: 17px;
+    color: #8E8E8E;
+    text-align: center;
+}
+
+input{
+    width : 258px;
+    height : 19px;
+    background: #FAFAFA;
+    border : 1px solid #efefef;
+    border-radius : 3px;
+    margin-top : 5px;
+    padding : 9px 0px 7px 8px;
+}
+
+.body{
+    background-color: #FFFFFF;
+    border : 1px solid #efefef;
+    border-radius: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.body2{
+    background-color: #FFFFFF;
+    border : 1px solid #efefef;
+    border-radius: 2px;
+    font-size : 14px;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 91px;
+    padding-right: 91px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body3{
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.explain{
+    font-size : 12px;
+    color : #8E8E8E;
+    margin : 20px 40px 35px;
+}
+
+.intro2{
+    padding-left: 89px;
+    padding-right: 89px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container2{
+    margin-top : 15px;
+    font-size: 14px;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#ok, #x{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 32.8%;
+    left : 56%;
+}
+
+#ok2, #x2{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 38.4%;
+    left : 56%;
+}
+
+#ok3, #x3{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 44%;
+    left : 56%;
+}
+
+#ok4, #x4{
+    display: none;
+    z-index : 1;
+    position:absolute;
+    top : 49.4%;
+    left : 56%;
+}
+
+#join{
+    opacity: 0.5;
+}

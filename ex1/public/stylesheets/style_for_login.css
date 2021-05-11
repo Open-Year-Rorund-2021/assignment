@@ -1,0 +1,109 @@
+body {
+    background: #FAFAFA;
+    text-align: center;
+}
+
+#main {
+    width: 350px;
+    height: 377.8px;
+    background-color: #FFFFFF;
+    padding: 10px 0px;
+    margin-top : 70px;
+    margin-right:0px;
+    margin-bottom : 0px;
+    margin-left : 0px;
+}
+
+.font {
+    width: 175px;
+    height: 51px;
+    font-size: 34px;
+    margin: 22px 86.5px 12px;
+}
+
+.card {
+    width: 350px;
+    height: 377.8px;
+}
+
+article{
+    display: inline-block;
+}
+
+#sub {
+    width: 350px;
+    height: 62.6px;
+    margin-top : 10px;
+    background-color: #FFFFFF;
+}
+
+.mb-3 {
+    margin: 0 auto;
+    width: 258px;
+    height: 36px;
+    padding: 9px 0px 7px 8px;
+}
+
+input {
+    color: #8F8F8F;
+    width: 258px;
+    height: 36px;
+    font-size: 1em;
+}
+
+div{
+    display: inline-block;
+}
+
+#exampleInputText1,
+#exampleInputPassword1 {
+    background-color: #FAFAFA;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #8F8F8F;
+    margin: 20px 0px -3px;
+}
+
+img {
+    width: 135px;
+    height: 40px;
+}
+
+button{
+    width:268px;
+    height:29.6px;
+    background-color: aqua;
+}
+
+.prac{
+    margin-top: 20px;
+}
+
+.img{
+    width:400px;
+    height:600px;
+    margin-top : -500px;
+    margin-bottom: 30px;
+}
+
+#introImg{
+    width:400px;
+    height:600px;
+    margin-top : -500px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width : 768px){
+    .img{
+        display: none;
+    }
+
+    #introImg{
+        display:none;
+    }
+}
