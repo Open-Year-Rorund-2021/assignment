@@ -58,7 +58,17 @@
 - Ubuntu 명령어 : https://velog.io/@devyang97/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-Ubuntu-%EC%82%AC%EC%9A%A9
 
 ## Features
-
+![4주차 과제 1](https://user-images.githubusercontent.com/41178045/117768100-db46e280-b26c-11eb-9367-bca3e3c401ec.gif)
+- 검색창 눌렀을 시에 이미지와 커서 왼쪽으로 이동
+![4주차 과제 2,3](https://user-images.githubusercontent.com/41178045/117768105-dd10a600-b26c-11eb-9098-39468ba6994e.gif)
+- 좋아요 눌렀을 때, 숫자 바뀌게 
+- 마우스를 올렸을 때 그림자+살짝 커지게 애니메이션
+![4주차 과제 4](https://user-images.githubusercontent.com/41178045/117768877-f6662200-b26d-11eb-8d67-036292c917ef.gif)
+- 프로필 화면에서 자기 게시물에 마우스 올렸을 때 댓글과 좋아요 수 + 흐려지게
+![4주차 과제 5](https://user-images.githubusercontent.com/41178045/117768880-f7974f00-b26d-11eb-955b-a397f5b39059.gif)
+- 프로필 화면에서 자기 게시물 누르면 뜨는 게시물 모달 
+![4주차 과제 6-1](https://user-images.githubusercontent.com/41178045/117769297-7d1aff00-b26e-11eb-873a-f1b0b566cd87.gif)
+- 프로필 눌렀을 때 프로필 변경 모달
 
 # 5주차
 ## Node.js (쿠키, 세션)
@@ -66,10 +76,10 @@
 - https://opentutorials.org/module/3549/21032
 
 ## Features
-node.js 세션 기능을 활용해서 지금까지 한 과제에 로그인 기능을 추가
+#### node.js 세션 기능을 활용해서 지금까지 한 과제에 로그인 기능을 추가
 ![5주차 과제 1](https://user-images.githubusercontent.com/41178045/117766161-1e538680-b26a-11eb-911c-0237782610e1.gif)
 - 로그인을 하지 않고 localhost:0000/instagram 이런식으로 피드 페이지와 개인 페이지에 직접 접근하려는 경우는 다시 로그인 화면으로 돌아와야 합니다
-![5주차 과제 2](https://user-images.githubusercontent.com/41178045/117766174-20b5e080-b26a-11eb-8d5e-b5cacc2bfc7f.gif)
+![5주차 과제 2](https://user-images.githubusercontent.com/41178045/117767730-5065e800-b26c-11eb-90fb-5abb69b9691d.gif)
 - 그인에 성공하면 로그인 정보가 세션에 저장되고 그 정보를 유지해야합니다.
 
 
