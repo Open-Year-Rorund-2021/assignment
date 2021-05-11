@@ -28,7 +28,7 @@
 - 피드 하나 완성
 - 모달창 : 클릭시 배경 흐리게, 각각은 기능하지 않아도 되지만 바깥을 누르면 꺼져야 함
 - 빨간 박스(추천친구) 는 선택
-- 미디어쿼리 : 창 줄이면 추천친구 사라짐
+-  +) 미디어쿼리 : 창 줄이면 추천친구 사라짐
 -  +) 좋아요 버튼 누르면 색칠되게
 
 # 3주차
@@ -58,17 +58,17 @@
 - Ubuntu 명령어 : https://velog.io/@devyang97/Linux-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-Ubuntu-%EC%82%AC%EC%9A%A9
 
 ## Features
-![4주차 과제 1](https://user-images.githubusercontent.com/41178045/117768100-db46e280-b26c-11eb-9367-bca3e3c401ec.gif)
-- 검색창 눌렀을 시에 이미지와 커서 왼쪽으로 이동
-![4주차 과제 2,3](https://user-images.githubusercontent.com/41178045/117768105-dd10a600-b26c-11eb-9098-39468ba6994e.gif)
-- 좋아요 눌렀을 때, 숫자 바뀌게 
-- 마우스를 올렸을 때 그림자+살짝 커지게 애니메이션
-![4주차 과제 4](https://user-images.githubusercontent.com/41178045/117768877-f6662200-b26d-11eb-8d67-036292c917ef.gif)
-- 프로필 화면에서 자기 게시물에 마우스 올렸을 때 댓글과 좋아요 수 + 흐려지게
-![4주차 과제 5](https://user-images.githubusercontent.com/41178045/117768880-f7974f00-b26d-11eb-955b-a397f5b39059.gif)
-- 프로필 화면에서 자기 게시물 누르면 뜨는 게시물 모달 
-![4주차 과제 6-1](https://user-images.githubusercontent.com/41178045/117769297-7d1aff00-b26e-11eb-873a-f1b0b566cd87.gif)
-- 프로필 눌렀을 때 프로필 변경 모달
+![4주차 과제 1](https://user-images.githubusercontent.com/41178045/117768100-db46e280-b26c-11eb-9367-bca3e3c401ec.gif)<br>
+- 검색창 눌렀을 시에 이미지와 커서 왼쪽으로 이동<br>
+![4주차 과제 2,3](https://user-images.githubusercontent.com/41178045/117768105-dd10a600-b26c-11eb-9098-39468ba6994e.gif)<br>
+- 좋아요 눌렀을 때, 숫자 바뀌게 <br>
+- 마우스를 올렸을 때 그림자+살짝 커지게 애니메이션<br>
+![4주차 과제 4](https://user-images.githubusercontent.com/41178045/117768877-f6662200-b26d-11eb-8d67-036292c917ef.gif)<br>
+- 프로필 화면에서 자기 게시물에 마우스 올렸을 때 댓글과 좋아요 수 + 흐려지게<br>
+![4주차 과제 5](https://user-images.githubusercontent.com/41178045/117768880-f7974f00-b26d-11eb-955b-a397f5b39059.gif)<br>
+- 프로필 화면에서 자기 게시물 누르면 뜨는 게시물 모달 <br>
+![4주차 과제 6-1](https://user-images.githubusercontent.com/41178045/117769297-7d1aff00-b26e-11eb-873a-f1b0b566cd87.gif)<br>
+- 프로필 눌렀을 때 프로필 변경 모달<br>
 
 # 5주차
 ## Node.js (쿠키, 세션)
