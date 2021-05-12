@@ -26,6 +26,16 @@ nav{
   flex-direction: row;
 }
 
+li{
+  text-align: center;
+  list-style: none;
+}
+
+li > a{
+  line-height: 3;
+  font-size: 15px;
+}
+
 .search > input{
     border: 1px solid #dbdbdb;
     border-radius: 3px;
@@ -76,9 +86,24 @@ nav{
   margin-bottom: 30px;
 }
 
-.profile > img{
+.open{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.userp{
   width: 150px;
   padding-left: 60px;
+}
+
+.modalInner1{
+  border-radius: 15px;
+  background-color: white;
+  margin: 12% auto;
+  padding: 20px;
+  width: 320px;
+  height: 220px;
 }
 
 .userid{
@@ -151,14 +176,14 @@ nav{
   height: 600px;
 }
 
-.openBtn{
+.openB{
   cursor: pointer;
   display: flex;
   border: none;
   background-color: transparent;
 }
 
-.closeBtn{
+.close{
   border: none;
   background: transparent;
   cursor: pointer;
@@ -207,7 +232,7 @@ nav{
 
 .c{
   padding-top: 7px;
-  padding-left: 13px;
+  padding-left: 10px;
 }
 
 .respond{
