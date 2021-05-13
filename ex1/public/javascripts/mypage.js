@@ -1,10 +1,18 @@
 let photos = ['광화문.jpg', 'hanriver.jpg', 'instagram.png', 'hanriver.jpg'];
 let a = ''
 for (let i = 0; i < photos.length; i++) {
-    a += `<img id="image${i}" onclick="clickPhoto(${i});" src="/images/feed/${photos[i]}" style="width : 280.4px; height : 280.4px; margin-top : 1px; margin-left : 3px; cursor : pointer;">`;
+    a += `<img id="image${i}" onclick="clickPhoto(${i});" onmouseover="hoverMouse(${i});" onmouseout="offhoverMouse(${i});" src="/images/feed/${photos[i]}" style="width : 280.4px; height : 280.4px; margin-top : 1px; margin-left : 3px; cursor : pointer;">`;
     if (i % 3 == 2) {
         a += `<br>`;
     }
+}
+
+function hoverMouse(k){
+    alert(k, '안녕하세요!');
+}
+
+function offhoverMouse(k){
+    alert(k, '안녕하세요!');
 }
 
 function clickPhoto(k) {

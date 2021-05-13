@@ -54,7 +54,7 @@ header{
 }
 
 #outer0, #outer1{
-    transition-delay: 500ms;
+    transition-delay: 350ms;
 }
 
 .contents{
