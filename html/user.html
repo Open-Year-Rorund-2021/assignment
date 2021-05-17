@@ -7,7 +7,7 @@
     <title>Instagram</title>
     <link rel="shortcut icon" href="insta.ico">
     <link rel="icon" href="insta.ico">
-    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="../css/user.css">
 
 </head>
 <body>
@@ -54,7 +54,7 @@
                             <div class="imgc">
                                 <canvas class="cc" height="113" width="113"></canvas>
                                 <span class="sc">
-                                    <img class="ic" src="image/profileimg.jpg" id="myBtn" style="cursor: pointer;">
+                                    <img class="ic" src="../image/profileimg.jpg" id="myBtn" style="cursor: pointer;">
                                 </span>
                                 <div id="myModal" class="modal">
                                     <div class="modal-content">
@@ -75,9 +75,7 @@
                         <section class="sc2">
                             <div class="divc2">
                                 <h2 class="h2c">hhanni</h2>
-                                <div class="divc3">
-                                    <span class="sc3"></span>
-                                </div>
+
                                 <div class="divc4">
                                     <div class="divc5">
                                         <div class="divc6">
@@ -159,7 +157,7 @@
     </div>
     <script>
         let re='';
-        let picture = ['image/image_1.jpg', 'image/image_2.jpg', 'image/image_3.jpg'];
+        let picture = ['../image/image_1.jpg', '../image/image_2.jpg', '../image/image_3.jpg'];
         let i = 0;
     
         for (i=0; i<3; i++) {
@@ -169,7 +167,7 @@
         document.getElementById('repeat').innerHTML = re;
     </script>
 
-    <script src="js/pfmodal.js"></script>
+    <script src="../js/pfmodal.js"></script>
 
 </body>
 </html>
