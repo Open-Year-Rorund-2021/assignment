@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    width:100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    #phone_img { 
+        display: none;
+    } 
+    #right{
+       margin-left: 20%;
+    }
+}
+
+#BOX {
+    text-align:center;
+    padding: 100px;
+    background:rgb(250, 250, 250);
+}
+
+#logo{
+    width:150px;
+}
+
+form {
+    padding:12px;
+    font-size:13px;
+    margin:5px;
+}
+
+.btn_img{
+    width: 150px;
+    margin:0cm;
+}
+
+#phone_img {
+    float: left;
+    height: 500px;
+}
+
+#left{
+    float: left;
+    padding-left:20%;
+}
+
+#right{
+    width: 400px;
+    float: left;
+}
+
+#input_wdw {
+    width:250px;
+    height:30px;
+    font-size:13px;
+    margin: 3px;
+    background: rgb(250, 250, 250);
+    border-radius:3px;
+    border:0;
+    outline:1px solid #dbdbdb;
+}
+
+#btn{
+    width:255px;
+    height:30px;
+    font-size:13px;
+    margin: 3px;
+    background:rgb(182, 232, 255); 
+    color: white;
+    border-radius:3px;
+    border: 0;
+    outline: 0;
+}
+
+#form_1 {
+    float: left;
+    padding: 20px;
+    display: block;
+    background: white;
+    border: 1px solid  #dbdbdb;
+    width: 300px;
+}
+
+#form_2 {
+    float: left;
+    padding: 20px;
+    display: block;
+    background: white;
+    border: 1px solid  #dbdbdb;
+    width: 300px;
+}
+
+#link{
+    color: rgb(15, 159, 255);
+}
+
+footer {
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+    height: 10px;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
