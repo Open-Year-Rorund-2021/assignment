@@ -1,0 +1,263 @@
+body{
+    margin: 0px;
+    width:100%;
+    height: 100%;
+    background:rgb(250, 250, 250);
+}
+
+#BOX{
+    text-align: center;
+}
+
+#header{
+    border-bottom: 1px solid  #dbdbdb;
+    height: 60px;
+    background:white;
+    width: 100%;
+    position: fixed;
+    top:-1px;
+}
+
+#search {
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+    width: 200px;
+    background:rgb(250, 250, 250);
+    font-size: 13px;
+    background-image: url(돋보기.PNG);
+    background-repeat: no-repeat;
+    background-position: 70px center;
+    padding-left: 8px;
+    background-size: 20px;
+}
+
+#logo{
+    margin-top:20px;
+    float:left;
+    padding-left:15%;
+}
+
+
+.H_pic{
+    height: 40px;
+    width:auto;
+    margin-top:10px;
+}
+
+#right_1{
+    padding-left: 15%;
+}
+
+@media (max-width: 800px){
+    #logo{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .H_pic{
+        padding:0;
+        margin-right:0;
+    }
+    #profile_pic{
+        margin: 80px;
+        margin-left:10%;
+     }
+}
+
+.B{
+    top: 100px;
+    text-align: center;
+    width:100%;
+    min-height: 800px;
+    background-color:rgb(250, 250, 250);
+}
+
+
+#profile_pic{
+    float: left;
+    margin: 80px;
+    margin-left:18%;
+    width:170px;
+    border-radius: 100%;
+    border: 1px solid  #dbdbdb;
+    margin-bottom: 0;
+}
+
+
+#user{
+    height:300px;
+    width:100%;
+    text-align: center;
+
+}
+.pic{
+    text-align: center;
+    width:280px;
+    padding:10px;
+}
+
+#name{
+    padding-top: 80px;
+    float: left;
+    text-align: left;
+}
+
+ul{
+    float: left;
+    padding-left:0;
+    font-size: 15px;
+}
+
+ul li{
+    display: inline-block;
+    padding-right:20px;
+}
+
+h2{
+    float: left;
+}
+button{
+    float: left;
+    margin: 25px;
+    margin-right: 15px;
+    padding: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid  #dbdbdb;
+    border-radius: 8%;
+}
+
+#set{
+    margin-top: 25px;
+    width: 30px;
+}
+
+#line{
+    width: 900px;
+}
+
+.modalBox_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalBox_1 .bg_1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .modalBox_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalBox_2 .bg_2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .modalBox_3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalBox_3 .bg_3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 800px;
+    height: 500px;
+    font-size: 13px;
+    line-height: 20px;
+    float: left;
+    text-align:left;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .list{
+    padding-top: 10px;
+    border-top: 1px solid  #dbdbdb;
+    cursor:default;
+  }
+
+  .modal_pic{
+      float: left;
+      height: 500px;
+  }
+
+  .modal_pro{
+      float: left;
+      margin:8px;
+      width: 45px;
+      border-radius: 100%;
+      border: 1px solid  #dbdbdb;
+  }
+
+.modal_line{
+    border-bottom: 1px solid  #dbdbdb;
+}
+
+.modal_heart{
+    float: right;
+    width: 300px;
+}
+
+.like{
+    font-size: 13px; 
+    padding-left: 515px;
+}
+
+.time{
+    color:rgb(172, 172, 172); 
+    font-size: 10px; 
+    padding-left: 515px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid  #dbdbdb;
+}
+
+.comment{
+    color:rgb(172, 172, 172); 
+    font-size: 12px;  
+    padding-bottom: 10px; 
+    width: 80px;
+    margin: 0;
+    display:inline;
+}
+
+.post{
+    color:rgb(153, 194, 213); 
+    font-size: 12px; 
+    margin-left: 150px;
+    padding-right:10px;
+    display:inline;
+}

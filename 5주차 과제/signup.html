@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/sign_up.css">
+
+    <link rel="shortcut icon" href="images/icon.png">
+    <script defer src="js/sign_up.js"></script>
+</head>
+<body>
+    <div id="BOX">
+        <div id="left">
+            <img src="images/인스타.PNG" alt="" id="phone_img">
+        </div>
+        <div id="right">
+            <p class="input_form">
+                <form action="" id="form_1">
+                    <img src="images/인스타로고.PNG" alt="" id="logo">
+                    <br>
+                    <p id="explain">친구들의 사진과 동영상을 보려면 가입하세요.</p>
+                    <img src="images/페이스북로그인.PNG" alt="" id="facebook">
+                    <br>
+                    <input type="text" name="ID" placeholder="휴대폰 또는 이메일 주소" id="email" class="input_wdw NO OK" onkeypress="GoToEnroll();"></input>
+                    <br>
+                    <input type="text" name="ID" placeholder="성명" id="name" class="input_wdw OK" onkeypress="OK_name()"></input>
+                    <br>
+                    <input type="text" name="ID" placeholder="사용자 이름" id="user_name" class="input_wdw OK" onkeypress="OK_user_name()"></input>
+                    <br>
+                    <input type="password" name="PASSWORD" placeholder="비밀번호" id="password" class="input_wdw OK" onkeypress="GoToPW()"></input>
+                    <br>
+                    <input type="button" value="가입" id="btn" onclick = "change_link();"></input><br>
+                </form>
+            </p>
+            
+            <p class="input_form">
+                <form action="" id="form_2">
+                    계정이 있으신가요?  <a id="link">로그인</a>
+                </form>
+            </p>
+
+            <form action="" class="input_form">
+                <p style="margin-top: 450px; padding: 10px;">앱을 다운로드하세요.</p>
+                <img src="images/버튼1.PNG" class="btn_img">
+                <img src="images/버튼2.PNG" class="btn_img">
+            </form>
+        </div>
+        <footer style="margin-top: 700px;">
+            <p>
+                소개   블로그   채용 정보   도움말   API   개인정보처리방침   약관   인기 계정   해시태그  위치
+            </p>
+            <p>
+                뷰티   댄스 및 공연   피트니스   식음료   집 및 정원   음악   시각 예술
+            </p>
+            <br>
+            <p>
+                <select name="language" id="">
+                    <option value="Korean">한국어</option>
+                    <option value="English">English</option>
+                </select>
+                © 2021 Instagram from Facebook
+            </p>
+            <br>
+        </footer>
+    </div>
+    
+</body>
+</html>

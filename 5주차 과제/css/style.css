@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    width:100%;
+    height: 100%;
+}
+
+#BOX{
+    text-align: center;
+}
+
+#header{
+    border-bottom: 1px solid  #dbdbdb;
+    height: 60px;
+    background:white;
+    width: 100%;
+    position: fixed;
+    top:-1px;
+}
+
+#search {
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+    width: 200px;
+    background:rgb(250, 250, 250);
+    font-size: 13px;
+    background-image: url(돋보기.PNG);
+    background-repeat: no-repeat;
+    background-position: 70px center;
+    padding-left: 8px;
+    background-size: 20px;
+    margin-top:24px;
+}
+
+#logo{
+    margin-top:20px;
+    position: relative;
+    float:left;
+    padding-left:15%;
+}
+
+.H_pic{
+    height: 40px;
+    width:auto;
+    margin-top:10px;
+}
+
+#H_right{
+    padding-left: 15%;
+}
+
+@media (max-width: 800px){
+    #logo{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .H_pic{
+        padding:0;
+    }
+}
+
+.picture{
+    height: 500px;
+}
+#pro{
+    float:left;
+    margin:10px;
+    border-radius: 100%;
+    border: 1px solid  #dbdbdb;
+    height: 40px;
+    margin-left:20px;
+}
+
+#main{
+    background-color:rgb(250, 250, 250);
+    width:100%;
+    height: 100%;
+}
+.contents{
+    top: 100px;
+    text-align: left;
+}
+.feed {
+    border: 1px solid  #dbdbdb;
+    background-color: white;
+    width: 500px;
+    border-radius: 3px;
+    margin:auto;
+    margin-top:40px;
+}
+.p_id{
+    margin-top: 18px;
+    font-size: 15px;
+}
+.openBtn{
+    float: right;
+    width: 28px;
+    padding-right: 10px;
+}
+.heart{
+    float: left;
+}
+.heart{
+    margin-left: 10px;
+    margin-right: 7px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.under{
+    line-height: 30px;
+    font-size: 12.5px;
+    margin-left: 10px;
+}
+.time{
+    font-size: 9px;
+    color:rgb(165, 165, 165);
+}
+.comment{
+    margin-left: 7px;
+    border-top: 1px solid  #dbdbdb;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color:rgb(165, 165, 165);
+    height: 40px;
+}
+.comment>img{
+    width:30px;
+    padding-top: 10px
+ }
+ .smile_pic{
+     float:left;
+ }
+ .write{
+     margin-left: 5px;
+     margin-top: 17px;
+     display:inline-block;
+ }
+ .post{
+     float:right;
+     margin-right: 10px;
+     font-weight: bolder;
+     color: rgb(119, 194, 255);
+     margin-top:auto;
+     margin-bottom: auto;
+     margin-top: 17px;
+ }
+ .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal .bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 380px;
+    height: 310px;
+    font-size: 13px;
+    border-radius: 10px;
+    line-height: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .list{
+    padding-top: 10px;
+    border-top: 1px solid  #dbdbdb;
+    cursor:default;
+  }

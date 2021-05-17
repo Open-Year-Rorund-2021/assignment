@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <script defer src="js/js_3.js"></script>
+</head>
+<body>
+    <div id="BOX">
+        <div id="header">
+            <a href="index.html"> <img src="images/인스타 로고.png" alt="" id="logo"></a>
+            <input type="text" name="search"  placeholder="검색" id="search"></input>
+            <img src="images/H_Right.jpg" alt="" id="H_right" class="H_pic">
+            <a href="index_profile.html"><img src="images/H_Right_p.jpg" alt="" id="H_right_p" class="H_pic"></a>
+        </div>
+
+
+    <div id="main">
+
+        <div class="modal hidden">
+            <div class="bg"></div>
+            <div class="modalBox">
+               <p style="color:red; font-weight: bold; cursor: default;">신고</p>
+               <p class="list" style="color:red; font-weight: bold;">팔로우 취소</p>
+               <p class="list">게시물로 이동</p>
+               <p class="list">공유 대상...</p>
+               <p class="list">링크 복사</p>
+               <p class="list">퍼가기</p>
+               <p class="list" id="close">취소</p>
+            </div>
+        </div>
+
+        <div class="contents">
+            <br>
+            <div class="feed">
+                <img src="images/프로필.jpg" alt="" id="pro">
+                <p class="p_id">insta_id
+                    <img src="images/모달.PNG" alt="" id="modal" class="openBtn">
+                </p>
+                <img src="images/피드.jpg" alt="" class="picture" ondblclick="changepic(1);">
+                <img src="images/하트(누름x).jpg" alt="" id="heart" onclick="changepic(1);" class="heart" width="25px">
+                <img src="images/next.jpg" alt="" width="444px">
+                <div class="under">
+                    <strong>banana_cat</strong>님 <strong>여러 명</strong>이 좋아합니다
+                    <br>
+                    <strong>insta_id</strong>
+                    엄지 척하는 고양이
+                    <p class="time">30분전</p>
+                </div>
+                <div class="comment">
+                    <img src="images/smile.PNG" alt="" class="smile_pic">
+                    <div class="write">댓글 달기...</div>
+                    <div class="post">게시</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <br>
+            <div class="feed">
+                <img src="images/프로필.jpg" alt="" id="pro">
+                <p class="p_id">insta_id
+                    <img src="images/모달.PNG" alt="" id="modal" class="openBtn">
+                </p>
+                    <img src="images/팬케이크.jpg" alt="" class="picture" ondblclick="changepic(2);">
+                    <img src="images/하트(누름x).jpg" alt="" id="heart" onclick="changepic(2);" class="heart" width="25px">
+                    <img src="images/next.jpg" alt="" width="444px">
+                <div class="under">
+                    <strong>banana_cat</strong>님 <strong>여러 명</strong>이 좋아합니다
+                    <br>
+                    <strong>insta_id</strong>
+                    팬케이크 !!
+                    <p class="time">30분전</p>
+                </div>
+                <div class="comment">
+                    <img src="images/smile.PNG" alt="" class="smile_pic">
+                    <div class="write">댓글 달기...</div>
+                    <div class="post">게시</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <br>
+            <div class="feed">
+                <img src="images/프로필.jpg" alt="" id="pro">
+                <p class="p_id">insta_id
+                    <img src="images/모달.PNG" alt="" id="modal" class="openBtn">
+                </p>
+                    <img src="images/복면고앵.jpg" alt="" class="picture" ondblclick="changepic(3);">
+                    <img src="images/하트(누름x).jpg" alt="" id="heart" onclick="changepic(3);" class="heart" width="25px">
+                    <img src="images/next.jpg" alt="" width="444px">
+                <div class="under">
+                    <strong>banana_cat</strong>님 <strong>여러 명</strong>이 좋아합니다
+                    <br>
+                    <strong>insta_id</strong>
+                    팬케이크 !!
+                    <p class="time">30분전</p>
+                </div>
+                <div class="comment">
+                    <img src="images/smile.PNG" alt="" class="smile_pic">
+                    <div class="write">댓글 달기...</div>
+                    <div class="post">게시</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        
+    </div>
+</body>
+</html>
