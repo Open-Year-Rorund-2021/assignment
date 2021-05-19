@@ -54,7 +54,7 @@ let join = document.getElementById("join").addEventListener('click', function ()
 
     if ((flag + flag2) == 2) {
         alert('로그인 성공!');
-        location.href = "/feed/";
+        location.href = "/feed";
 
     }
 });

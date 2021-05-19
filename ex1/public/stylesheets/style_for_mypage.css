@@ -219,3 +219,9 @@ hr{
     width : 60%;
     background-color :#efefef;
 }
+
+#shell{
+    display : none;
+    width : 280.4px;
+    height : 280.4px;
+}

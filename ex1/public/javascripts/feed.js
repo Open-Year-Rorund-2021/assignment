@@ -131,13 +131,13 @@ document.getElementById('input_control').addEventListener('keydown', function ()
 })
 
 document.getElementById('home').addEventListener('click', function () {
-    location.href = "/feed/";
+    location.href = "/feed";
 })
 
 document.getElementById('home2').addEventListener('click', function () {
-    location.href = "/feed/";
+    location.href = "/feed";
 })
 
 document.getElementById('person').addEventListener('click', function () {
-    location.href = "/mypage/";
+    location.href = "/mypage";
 })
