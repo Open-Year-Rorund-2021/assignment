@@ -21,6 +21,11 @@ router.get('/feed', function(req, res, next) {
   }
 });
 
+router.get('/register', function(req, res, next) {
+  
+  res.render('register.html');
+});
+
 router.post('/feed', function(req, res, next) {
 
   /*post로 들어온 경우, 쿠키를 설정해 줌 */
