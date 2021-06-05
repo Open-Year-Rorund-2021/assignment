@@ -53,8 +53,14 @@ header{
     align-items: center;
 }
 
-#outer0, #outer1{
-    transition-delay: 350ms;
+.outer{
+    transition-delay: 0.2s;
+}
+
+.outer:hover{
+    transition-delay: 0.2s;
+    box-shadow: 4px 4px 4px #8e8e8e;
+    transform : translate(-5px, -5px);
 }
 
 .contents{

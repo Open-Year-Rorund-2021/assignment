@@ -3,7 +3,7 @@ let array = ['hanriver.jpg', 'instagram.png'];
 let cont = ['한강입니다~', '인스타그램 로고입니다.'];
 
 for (let i = 0; i < array.length; i++) {
-    a += `<div id="outer${i}" onmouseenter="enLarge(${i})"><div class="top">
+    a += `<div class="outer"><div class="top">
                 <img class = "profile" src="/images/feed/광화문.jpg" style="width:32px; height:32px;">
                 <div style="margin-left : 10px; margin-right:300px; font-size:0.9vw">OpenYearRound</div>
                 <button id="modal_btn";" style="background-color: #FFFFFF; border:0px;">
@@ -51,21 +51,6 @@ document.getElementById('modal_btn').addEventListener('click', function () {
 document.getElementById('modal_close_btn').addEventListener('click', function () {
     document.getElementById('my_modal').style.display = 'none';
 });
-
-function enLarge(k) {
-    document.getElementById('outer' + k).addEventListener('mouseout', function () {
-        document.getElementById('outer' + k).style.cssText = "transform: scale(1);";
-        document.getElementById('outer' + k).style.boxShadow = "none";
-    });
-
-    document.getElementById('outer' + k).addEventListener('mouseover', function () {
-        // 111, 112줄 순서 바뀌면 제대로 안 됨
-        document.getElementById('outer' + k).style.cssText = "transform: scale(1.03)";
-        document.getElementById('outer' + k).style.boxShadow = "2px 2px 2px 2px #8E8E8E";
-
-    });
-
-}
 
 function colorChange(k) {
 
