@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="insta.ico">
+    <link rel="stylesheet" href="../css/feed.css"> 
+    
+</head>
+<body>
+    <header class="head">
+        <div class="left">
+            <a href="feed.html"><img class="logo_instagram_txt" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="인스타로고"></a>
+        </div>
+        <input id="searchInput" type="search" class="search_box" placeholder="검색">
+        <div class="right">
+            <div>
+                <a href="https://www.instagram.com/">
+                    <img class="img_size" src="https://static.thenounproject.com/png/682496-200.png" alt="홈">
+                </a>
+            </div> 
+            <div>
+                <a href="https://www.instagram.com/direct/inbox/">
+                    <img class="img_size" src="https://img.icons8.com/ios/452/sent.png"> 
+                </a>
+            </div>          
+            <div>
+                <a href="https://www.instagram.com/explore/">
+                    <img class="img_size" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+                </a>
+            </div>
+           <div>
+                <a href="https://www.instagram.com/accounts/activity/">
+                    <img class="img_size" src="https://static.thenounproject.com/png/1380342-200.png" alt="하트">
+                </a>
+            </div>
+            <div>
+                <a href="user.html">
+                    <img class="my_profile" src="../image/profileimg.jpg" alt="내프로필">
+                </a>                
+            </div>
+        </div>
+    </header>
+
+
+    <!--body-->
+    <div class="none"></div>
+    <div class="main_body" id="refeed">
+    </div>
+    <script>
+        let re='';
+        let picture = ['../image/image_1.jpg', '../image/image_2.jpg', '../image/image_3.jpg'];
+        let i = 0;
+
+        for(i=0; i<3; i++) {
+            re += ` <article>
+            <header class="feedhead">
+                        <div class="feed_profile">
+                            <a href="user.html">
+                                <img class="img_profile" src="../image/profileimg.jpg">
+                            </a>
+                            <span class="user_id">hhanni</span>
+                        </div>
+                        <button type="button" class="modalbutton" id="myBtn">
+                            <img class="icon_react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                        </button>
+                        
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal_entire">
+                                    <div class="modal_line">
+                                        <button class="modal_red line">신고</button>
+                                        <button class="modal_red line">팔로우 취소</button>                                            
+                                        <button class="modal_black line">게시물로 이동</button>
+                                        <button class="modal_black line">공유 대상...</button>
+                                        <button class="modal_black line">링크 복사</button>
+                                        <button class="modal_black line">퍼가기</button>
+                                        <button class="modal_black line close">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </header>
+                    <div>
+                        <img class="feed_picture" src="`+picture[i]+`" alt="피드 사진">
+                    </div>
+                        
+                    <div class="feed_bottom">
+                        <div class="feed_left">
+                            <img class="feed_icon" id="chheart" onclick="changeheart()" border ="0" src="https://static.thenounproject.com/png/1380342-200.png" alt="하트">
+                            <img class="feed_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="코멘트">
+                            <img class="feed_icon" src="https://img.icons8.com/ios/452/sent.png" alt="DM">
+                        </div>
+                        <img class="bookmark" src="https://static.thenounproject.com/png/3318724-200.png" alt="북마크">
+                    </div>
+                        <div class="feed_article">
+                            <div class="feed_article_box">
+                                <div class="feed_heart"><span style="font-weight: bold;">좋아요 </span><span id="cha"> 103개</span></div>
+                                <div class="comments_container">
+                                    <div class="comments"><span style="font-weight: bold;">hhanni</span> 안녕</div>
+                                    <div class="comments1">더 보기</div>
+                                </div>
+                                <div class="comments1">댓글 모두 보기</div>
+                                <div class="comments1_box">
+                                    <div class="comments"><span style="font-weight: bold;">hihihi</span> w0w</div>
+                                </div>
+                                <div class="comments2">1일 전</div>
+                            </div>
+                        </div>
+                        <div class="inputContainer">
+                            <div class="type_comment">
+                                <input class="inputBox" type="text" placeholder="댓글 달기...">
+                            </div>
+                            <span>
+                                <button class="buttonBox" type="submit">게시</button>
+                            </span>
+                        </div>
+                    </div>
+            </article>
+            <div class="mb"></div>
+            `;
+        }
+
+        document.getElementById('refeed').innerHTML = re;
+    </script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/heart.js"></script>
+</body>
+</html>
